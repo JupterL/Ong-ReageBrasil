@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reage Brasil | Apoio Humanitário e Resgate</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="../js/scripts.js" defer></script>
+</head>
+<body>
+
+           <!--Logo-->
+    <header>
+        <div class="logo-container"> 
+            <img src="../media/logoreagebr.jpg" alt="Logo Reage Brasil" class="logo">
+            <h1>REAGE BRASIL</h1>
+        </div>
+
+        <!--Navegação do home e opções-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos | Ações</a></li>
+                <li><a href="blog.html">Novidades no Blog</a></li>
+                <li><a href="voluntariado.html">Inscreva-se</a></li>
+                <li><a href="contato.html">Contato e Dúvidas</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="doacoes.html" class="botao-doar">Doações</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1>Como Doar e Fazer Parte da Missão</h1>
+    
+    <section id="formulario-doacao">
+        <h2>Realize sua Doação Online</h2>
+
+        <form>
+            <fieldset>
+                <legend>Dados da Doação</legend>
+
+                <div class="form-group">
+                    <label for="valor">Valor da Doação (R$)</label>
+                    <input type="number" id="valor" name="valor" min="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="metodoPagamento">Método de Pagamento</label>
+                    <select id="metodoPagamento" name="metodoPagamento" required>
+                        <option value="cartaoCredito">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo de Contribuição</label>
+                    <div class="radio-options">
+                    <input type="radio" id="unica" name="recorrencia" value="unica" checked>
+                    <label for="unica">Doação Única</label>
+            
+                    <input type="radio" id="mensal" name="recorrencia" value="mensal">
+                    <label for="mensal">Mensal (Recorrente)</label>
+        </div>
+                </div>
+            </fieldset>
+              <fieldset>
+                <legend>Informações do Doador</legend>
+                   <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                   </div>
+
+                   <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                   </div>
+
+                   <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" 
+                       pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" 
+                       title="Formato: (99) 99999-9999">
+                  </div>
+            </fieldset>
+            <button type="submit" class="cta-doar-final">Confirmar Doação</button>
+        </form>
+    </section>
+
+     <section id="chamada-transparencia">
+    
+    <h2><a href="transparencia.html">Onde seu Dinheiro é Aplicado (Transparência)</a></h2> 
+    
+    <p>Nossa fundação opera com 100% de transparência. Clique e veja nossos relatórios.</p>
+    
+    <p><a href="transparencia.html">Ver Relatórios Detalhados</a></p>
+
+     </section>
+</main>
+
+ <footer>
+        <p>&copy; 2024 Reage Brasil. Todos os direitos reservados.</p>
+        <nav class="redes-sociais">
+            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+        </nav>
+    </footer>
