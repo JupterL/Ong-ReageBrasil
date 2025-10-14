@@ -8,14 +8,20 @@
     <script src="../js/scripts.js" defer></script>
 </head>
 <body>
-
-           <!--Logo-->
     <header>
+      <!--Logo-->
         <div class="logo-container"> 
-            <img src="../media/logoreagebr.jpg" alt="Logo Reage Brasil" class="logo">
-            <h1>REAGE BRASIL</h1>
-        </div>
-
+        <picture>
+        <source media="(max-width: 480px)" 
+                srcset="../media/logo-mobile-sm.png"> 
+                
+        <source media="(max-width: 800px)" 
+                srcset="../media/logoreagebr.jpg">
+                
+        <img src="../media/logoreagebr.jpg" 
+             alt="Logo Reage Brasil" 
+             class="logo">
+        </picture>
         <!--Navegação do home e opções-->
         <nav>
             <ul>
@@ -31,40 +37,49 @@
         </nav>
     </header>
     <main>
+        <!--Projetos e Ações-->
          <Section>
             <h2>Projetos e Ações</h2>
             <P>Atuamos em diversos locais do país ajudando quem precisa:</P>
          </Section>
+            <!--Enchente Petropolis (RJ)-->
             <article>
                 <h3>Enchentes e Deslizamentos em Petrópolis (RJ) - 2022</h3>
                 <P>Resgate em Áreas de Risco e Apoio Psicológico.</P>
+                <img src="../media/resgate-petropolis.jpg" alt="Imagem de resgate em Petrópolis" width="600px">
              </article>
-
+            <!--Inundação no nordeste-->
             <article>
                 <h3>Chuvas e Inundações no Nordeste - 2022</h3>
                 <P>Logística de Kits de Sobrevivência e Alojamento.</P>
+                <img src="../media/ajudaNordeste.jpg" alt="Imagem de ajuda no Nordeste" width="600px">
             </article>
-
+            <!--Chuvas e deslizamentos em SP-->
             <article>
                 <h3>Chuvas e Deslizamentos em São Paulo/Litoral Norte - 2023</h3>
                 <P>Reconstrução de Infraestrutura e Resgate em Múltiplos Municípios.</P>
+                <img src="../media/ajudaSP.jpg" alt="Imagem de ajuda em São Paulo" width="600px">
            </article>
-
+              <!--Enchente no RS-->
             <article>
                 <h3>Enchentes no Rio Grande do Sul (RS) - 2024</h3>
                 <P>Missão Gigante de Resgate, Reconstrução e Apoio Animal.</P>
+                <img src="../media/enchenteRS.jpg" alt="Imagem de ajuda no Rio Grande do Sul" width="600px">
              </article>
-
+            <!--Seca na Amazônia-->
             <article>
                 <h3>Seca na Amazônia e Pantanal - 2023 e 2024</h3>
                 <P>Ajuda Humanitária e Logística de Água Potável.</P>
+                <img src="../media/secaAmazonia.jpg" alt="Imagem de ajuda na Amazônia" width="600px">
             </article>
             </main>
+
+            <!--Rodapé com redes sociais-->
     <footer>
         <p>&copy; 2024 Reage Brasil. Todos os direitos reservados.</p>
         <nav class="redes-sociais">
-            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="../media/facebookLogo.jpg " alt="Facebook" width="20px"></a>
+            <a href="#" aria-label="Twitter"><img src="../media/twitterLogo.jpg" alt="Twitter" width="20px"></a>
+            <a href="#" aria-label="Instagram"><img src="../media/instagramLogo.jpg" alt="Instagram" width="20px"></a>
         </nav>
     </footer>

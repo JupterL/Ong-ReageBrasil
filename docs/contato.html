@@ -8,13 +8,20 @@
     <script src="../js/scripts.js" defer></script>
 </head>
 <body>
-
-           <!--Logo-->
     <header>
+        <!--Logo-->
         <div class="logo-container"> 
-            <img src="../media/logoreagebr.jpg" alt="Logo Reage Brasil" class="logo">
-            <h1>REAGE BRASIL</h1>
-        </div>
+        <picture>
+        <source media="(max-width: 480px)" 
+                srcset="../media/logo-mobile-sm.png"> 
+                
+        <source media="(max-width: 800px)" 
+                srcset="../media/logoreagebr.jpg">
+                
+        <img src="../media/logoreagebr.jpg" 
+             alt="Logo Reage Brasil" 
+             class="logo">
+        </picture>
 
         <!--Navegação do home e opções-->
         <nav>
@@ -31,8 +38,8 @@
         </nav>
     </header>
     <main>
+        <!--Contato e dúvidas / Como entrar em contato conosco-->
           <section>
-
             <h1>Contato e Dúvidas</h1>
             <p>Estamos aqui para ajudar!<br>
             Se você tiver alguma dúvida ou precisar de mais informações sobre nossos projetos e como você pode contribuir, não hesite em entrar em contato conosco.</p>
@@ -42,9 +49,8 @@
                 <li>Telefone: (11) 1234-5678</li>
                 <li>Endereço: Rua da Solidariedade, 123, São Paulo, SP</li>
             </ul>
-
           </section>
-
+        <!--Resgate Brasil entra em contato com o solicitante -->
           <section id="form-contato">
             <h2>Nós também entramos em contato:</h2>
             <p>Se preferir, preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
@@ -81,11 +87,12 @@
 
         </main>
         
-    <footer>
+            <!--Rodapé com redes sociais-->
+   <footer>
         <p>&copy; 2024 Reage Brasil. Todos os direitos reservados.</p>
         <nav class="redes-sociais">
-            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="../media/facebookLogo.jpg " alt="Facebook" width="20px"></a>
+            <a href="#" aria-label="Twitter"><img src="../media/twitterLogo.jpg" alt="Twitter" width="20px"></a>
+            <a href="#" aria-label="Instagram"><img src="../media/instagramLogo.jpg" alt="Instagram" width="20px"></a>
         </nav>
     </footer>

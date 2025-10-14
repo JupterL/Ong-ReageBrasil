@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="../css/style.css"> 
     <script src="../js/scripts.js" defer></script>
 </head>
-<body>
-
-           <!--Logo-->
+<body>  
     <header>
+        <!--Logo-->
         <div class="logo-container"> 
-            <img src="../media/logoreagebr.jpg" alt="Logo Reage Brasil" class="logo">
-            <h1>REAGE BRASIL</h1>
-        </div>
+        <picture>
+        <source media="(max-width: 480px)" 
+                srcset="../media/logo-mobile-sm.png"> 
+                
+        <source media="(max-width: 800px)" 
+                srcset="../media/logoreagebr.jpg">
+                
+        <img src="../media/logoreagebr.jpg" 
+             alt="Logo Reage Brasil" 
+             class="logo">
+        </picture>
+    <!--Título inicial-->
+    <h1>REAGE BRASIL</h1>
+</div>
 
         <!--Navegação do home e opções-->
         <nav>
@@ -32,10 +42,11 @@
     </header>
 
     <main>
-    <!--Texto da ajuda humanitária-->
+    <!--Texto inicial-->
     <section id="hero"> 
         <h2>Onde a Ajuda humanitária Não Espera.</h2> 
         <p>A Reage Brasil é uma equipe especializada em resgates que atua sem fins lucrativos. Todas as doações que recebemos vão direto para as famílias que tiveram perdas devido aos desastres naturais.<br> Explore nosso site para saber mais sobre nossos projetos, eventos e como você pode fazer parte.</p>
+        <img src="../media/heartCaridade.jpg" alt="Imagem de ajuda humanitária"> 
     </section>
 
     <!--Estatisticas e convite-->
@@ -45,6 +56,7 @@
             <h3>Há mais de 2 Anos salvando vidas</h3>
             <p>Nosso projeto cresceu e hoje temos +500 profissionais e voluntários dedicados sempre em prontidão a favor da vida.</p>
             <p>Mais de 2.000 familias salvas e com seus lares reestruturados com as doações que recebemos.</p>
+            <img src="../media/equipeDoandoAlimentos.webp" alt="Imagem de estatísticas">
         </div>
 
         <aside class="chamada-engajamento">
@@ -52,6 +64,7 @@
             <p>Você também pode fazer a diferença. Ajude-nos a ampliar nossa rede de resgate e apoio para que possamos recuperar o sorriso das famílias que foram vítimas.</p>
             <p>Seu tempo (como voluntário) ou sua doação (como parceiro) garante que nossas equipes cheguem mais rápido. Não fique de fora desta corrente de resgate.</p>
             <a href="voluntariado.html">Inscreva-se agora</a>
+            <img src="../media/venhaFazerParte.jpg" alt="Imagem de voluntários ajudando" width="700">
         </aside>
         
     </section>
@@ -65,11 +78,11 @@
 </main>
 
     <!--Rodapé com redes sociais--> 
-    <footer>
+   <footer>
         <p>&copy; 2024 Reage Brasil. Todos os direitos reservados.</p>
         <nav class="redes-sociais">
-            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="../media/facebookLogo.jpg " alt="Facebook" width="20px"></a>
+            <a href="#" aria-label="Twitter"><img src="../media/twitterLogo.jpg" alt="Twitter" width="20px"></a>
+            <a href="#" aria-label="Instagram"><img src="../media/instagramLogo.jpg" alt="Instagram" width="20px"></a>
         </nav>
     </footer>

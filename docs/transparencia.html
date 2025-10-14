@@ -8,14 +8,20 @@
     <script src="../js/scripts.js" defer></script>
 </head>
 <body>
-
-           <!--Logo-->
      <header>
+       <!--Logo-->
         <div class="logo-container"> 
-            <img src="../media/logoreagebr.jpg" alt="Logo Reage Brasil" class="logo">
-            <h1>REAGE BRASIL</h1>
-        </div>
-
+        <picture>
+        <source media="(max-width: 480px)" 
+                srcset="../media/logo-mobile-sm.png"> 
+                
+        <source media="(max-width: 800px)" 
+                srcset="../media/logoreagebr.jpg">
+                
+        <img src="../media/logoreagebr.jpg" 
+             alt="Logo Reage Brasil" 
+             class="logo">
+        </picture>
         <!--Navegação do home e opções-->
         <nav>
             <ul>
@@ -32,6 +38,7 @@
      </header>
      </body>
      <main>
+        <!--Transparencia da empresa-->
     <section class="transparencia">
         <h1>Transparência Inegociável</h1>
         
@@ -43,8 +50,9 @@
         <ul>
             <li><strong>85%</strong> dos fundos são destinados a Ações Diretas em Campo (Socorro, Logística e Reconstrução).</li>
             <li><strong>15%</strong> cobrem Custos Operacionais e de Transparência (Auditoria, Tecnologia e Comunicação).</li>
-            </ul>
-        
+        </ul>
+
+        <!--LGPD / Segurança e conformidade de dados-->
         <h3>Segurança e Conformidade (LGPD)</h3>
         <p>Sua confiança é o nosso maior ativo. Levamos a proteção de dados a sério, garantindo que suas informações estejam sempre seguras:</p>
 
@@ -57,15 +65,16 @@
         </dl>
         
         <h3>Acesso à Informação</h3>
-        <p>Nossa equipe está sempre disponível para responder perguntas e fornecer informações adicionais. Basta voce entrar em contato conosco pelo formulário.</p>
+        <a href="contato.html"</a> <p> Nossa equipe está sempre disponível para responder perguntas e fornecer informações adicionais. Basta voce entrar em contato conosco pelo formulário.</p>
 
     </section>
 </main>
-    <footer>
+  <!--Rodapé com redes sociais-->
+  <footer>
         <p>&copy; 2024 Reage Brasil. Todos os direitos reservados.</p>
         <nav class="redes-sociais">
-            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="../media/facebookLogo.jpg " alt="Facebook" width="20px"></a>
+            <a href="#" aria-label="Twitter"><img src="../media/twitterLogo.jpg" alt="Twitter" width="20px"></a>
+            <a href="#" aria-label="Instagram"><img src="../media/instagramLogo.jpg" alt="Instagram" width="20px"></a>
         </nav>
     </footer>

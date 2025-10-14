@@ -8,13 +8,20 @@
     <script src="../js/scripts.js" defer></script>
 </head>
 <body>
-
-           <!--Logo-->
     <header>
+    <!--Logo-->
         <div class="logo-container"> 
-            <img src="../media/logoreagebr.jpg" alt="Logo Reage Brasil" class="logo">
-            <h1>REAGE BRASIL</h1>
-        </div>
+        <picture>
+        <source media="(max-width: 480px)" 
+                srcset="../media/logo-mobile-sm.png"> 
+                
+        <source media="(max-width: 800px)" 
+                srcset="../media/logoreagebr.jpg">
+                
+        <img src="../media/logoreagebr.jpg" 
+             alt="Logo Reage Brasil" 
+             class="logo">
+        </picture>
 
         <!--Navegação do home e opções-->
         <nav>
@@ -31,10 +38,19 @@
         </nav>
     </header>
     <main>
-        <!--Texto Inicial (Título)-->
+        <!--Título Inicial (Sobre nós)-->
         <section>
             <h1>Sobre Nós | Venha nos conhecer!</h1>
         </section>
+       
+        <!--Podcast Reage Brasil - sessão especial-->
+        <section id="podcast-depoimento"> 
+        <h2>Ouça Nossa História: Podcast Reage Brasil</h2>
+        <audio controls>
+            <source src="../media/podcastReageBrasil.mp4" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.  
+     </section>
+
         <!--Nossa História - sessão 1-->
         <section>
             <h2>Nossa História: O Chamado para Agir</h2>
@@ -65,12 +81,13 @@
                 <li>Logística e transporte urgente de equipes e donativos para zonas de crise.</li>
                 <li>Reestruturação de moradias e apoio financeiro direto a famílias.</li>
             </ul>
+            <img src="../media/semFinsLucrativos.png" alt="Imagem de transparência e doações">
         </section>
         <!--Nossa Equipe - sessão 4-->
         <section>
             <h2>Nossa Equipe: O Coração do Resgate</h2>
             <p>Contamos hoje com uma rede robusta de mais de 500 profissionais e voluntários dedicados em prontidão. Nossa equipe é composta por:</p>
-
+            <img src="../media/nossaEquipe.jpg" alt="Imagem da equipe Reage Brasil" width="600px">  
             <ul>
                 <li>Socorristas e paramédicos treinados em primeiros socorros em cenários de risco.</li>
                 <li>Veterinários especializados em resgate e tratamento de animais em situação de emergência.</li>
@@ -82,12 +99,12 @@
     </main>
     
    <!--Rodapé com redes sociais--> 
-    <footer>
+   <footer>
         <p>&copy; 2024 Reage Brasil. Todos os direitos reservados.</p>
         <nav class="redes-sociais">
-            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="../media/facebookLogo.jpg " alt="Facebook" width="20px"></a>
+            <a href="#" aria-label="Twitter"><img src="../media/twitterLogo.jpg" alt="Twitter" width="20px"></a>
+            <a href="#" aria-label="Instagram"><img src="../media/instagramLogo.jpg" alt="Instagram" width="20px"></a>
         </nav>
     </footer>
     

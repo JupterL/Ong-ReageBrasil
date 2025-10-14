@@ -8,13 +8,20 @@
     <script src="../js/scripts.js" defer></script>
 </head>
 <body>
-
-           <!--Logo-->
     <header>
+       <!--Logo-->
         <div class="logo-container"> 
-            <img src="../media/logoreagebr.jpg" alt="Logo Reage Brasil" class="logo">
-            <h1>REAGE BRASIL</h1>
-        </div>
+        <picture>
+        <source media="(max-width: 480px)" 
+                srcset="../media/logo-mobile-sm.png"> 
+                
+        <source media="(max-width: 800px)" 
+                srcset="../media/logoreagebr.jpg">
+                
+        <img src="../media/logoreagebr.jpg" 
+             alt="Logo Reage Brasil" 
+             class="logo">
+        </picture>
 
         <!--Navegação do home e opções-->
         <nav>
@@ -31,12 +38,16 @@
         </nav>
     </header>
     <main>   
+        <!--Título inicial e paragrafo-->
         <section>
         <h1>Inscreva-se | Junte-se a Nossa Missão!</h1>
         <p>Seja voluntário ou parceiro e ajude-nos a salvar vidas e reconstruir comunidades.</p>
         </section>
 
-    <form>
+        <!--Formulário de inscrição-->
+   <section class="formulario-inscricao">
+    <form> 
+        <!--Opções de inscrição-->
         <div>
             <label>Quero me inscrever como:</label>
             <select> 
@@ -44,7 +55,7 @@
                 <option value="parceiro">Parceiro</option>
             </select>
         </div>
-
+       <!--Area de interesse-->
        <div>
             <label for="areaInteresse">Área de interesse:</label> 
             <select id="areaInteresse" name="areaInteresse"> 
@@ -55,7 +66,7 @@
                 <option value="logistica">Logística</option>
             </select>
         </div>
-
+        <!--Dados pessoais-->
         <div>
             <label for="nome">Seu Nome Completo:</label>
             <input type="text" id="nome" name="nome" required>
@@ -88,16 +99,17 @@
             <input type="text" id="endereço" name="endereço" required>
         </div>
         <button type="submit">Enviar Inscrição</button>
-
+   
     </form>
-</section>
+    </section>
     </main>
+
     <!--Rodapé com redes sociais-->
-    <footer>
+   <footer>
         <p>&copy; 2024 Reage Brasil. Todos os direitos reservados.</p>
         <nav class="redes-sociais">
-            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="../media/facebookLogo.jpg " alt="Facebook" width="20px"></a>
+            <a href="#" aria-label="Twitter"><img src="../media/twitterLogo.jpg" alt="Twitter" width="20px"></a>
+            <a href="#" aria-label="Instagram"><img src="../media/instagramLogo.jpg" alt="Instagram" width="20px"></a>
         </nav>
     </footer>

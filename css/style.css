@@ -5,3 +5,17 @@
 .fotoResgateHome {
     max-width: 500px;
 }
+
+.carrossel-item {
+    display: flex; 
+    align-items: center;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+.carrossel-item img {
+    width: 300px;
+    min-width: 300px;
+    height: 200px;
+    margin-right: 10px;
+}
