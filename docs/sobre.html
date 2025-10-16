@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reage Brasil | Apoio Humanitário e Resgate</title>
-    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/style.css">  
     <script src="../js/scripts.js" defer></script>
 </head>
-<body>
+<body>  
     <header>
-    <!--Logo-->
+        <!--Logo-->
         <div class="logo-container"> 
         <picture>
         <source media="(max-width: 480px)" 
@@ -22,7 +22,9 @@
              alt="Logo Reage Brasil" 
              class="logo">
         </picture>
-
+    <!--Título inicial-->
+    <h1>REAGE BRASIL</h1>
+</div>
         <!--Navegação do home e opções-->
         <nav class="main-nav">
             <ul>
@@ -38,62 +40,84 @@
         </nav>
     </header>
     <main>
-        <!--Título Inicial (Sobre nós)-->
-        <section>
-            <h1>Sobre Nós | Venha nos conhecer!</h1>
-        </section>
-       
         <!--Podcast Reage Brasil - sessão especial-->
-        <section id="podcast-depoimento"> 
+    <section id="podcast-depoimento">
+    <div class="podcast-texto">
         <h2>Ouça Nossa História: Podcast Reage Brasil</h2>
-        <audio controls>
-            <source src="../media/podcastReageBrasil.mp4" type="audio/mpeg">
-            Seu navegador não suporta o elemento de áudio.  
-     </section>
+        <p>Para você que acompanha podcasts, preparamos um resumo emocionante da nossa trajetória! Ouça agora os bastidores das missões e como sua ajuda transforma vidas.</p>
+    </div>
+    
+    <div class="podcast-player-container"> 
+        <div class="podcast-player-hidden">
+            <audio id="meuPodcast" controls> 
+                <source src="../media/podcastReageBrasil.mp4" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.  
+            </audio>
+        </div>
+        
+        <div class="podcast-card">
+            <h3>Episódio #1: Nossa Trajetória</h3>
+            <p>Os bastidores do Reage Brasil.</p>
+            <button class="play-button">▶️</button> 
+        </div>
+    </div>
+</section>
 
         <!--Nossa História - sessão 1-->
-        <section>
+        <section class="nossaHistoria1">
             <h2>Nossa História: O Chamado para Agir</h2>
-            <p>A REAGE BRASIL nasceu há mais de 2 anos de uma necessidade urgente: ser a resposta imediata onde a ajuda tradicional não consegue chegar a tempo e prestarmos o apoio que as familias não conseguiram ajuda do Governo Municipal e Estadual</p>
+            <p>A REAGE BRASIL nasceu há mais de 2 anos de uma necessidade urgente: ser a resposta imediata e especializada onde o auxílio tradicional não consegue chegar a tempo, preenchendo a lacuna crítica do apoio que as famílias não conseguiram obter do Governo Municipal e Estadual.</p>
+            <br>
+            <p>Não somos apenas uma instituição; somos uma rede de socorristas e reconstrutores que opera com zero burocracia. Nossas raízes estão no compromisso de transformar a solidariedade em ação real, chegando nas áreas de difícil acesso com água, comida e, mais importante, a promessa de reconstrução. Nosso histórico é construído no campo, lado a lado com as vítimas.</p>
         </section>
 
         <!--Nossa Essencia e Missao - sessão 2-->
-        <section>
-            <h2>Nossa Essência e Missão</h2>
-            <dl>
-                <dt>Missão:</dt>
-                <p>Promover o resgate humanitário imediato e a reconstrução digna de comunidades vulneráveis...</p>
-                
-                <dt>Visão:</dt>
-                <p>Ser reconhecida como a principal rede de socorro ágil e ético do Brasil...</p>
-            </dl>
-        </section>
+       <section class="essenciaMissao2">
+    <h2>Nossa Essência e Missão</h2>
+    <br>
+    <dl>
+        <dt><strong> Missão:</strong></dt>
+        <dd>Promover o resgate humanitário imediato e a reconstrução digna de comunidades vulneráveis. Nossa essência é ser a força ágil que não espera, correndo atrás para levar socorro, dignidade e a promessa de um lar seguro a todos que perderam tudo. Abraçamos a causa de cada vida — humana ou animal — com o compromisso inabalável de reconstruir e devolver a esperança.</dd> 
+        
+        <dt><strong>Visão:</strong></dt>
+        <dd>Ser reconhecida como a principal rede de socorro ágil e ético do Brasil, capaz de mobilizar voluntários e recursos em menos de 48 horas em qualquer crise. Lutamos por um futuro onde a preparação comunitária e a solidariedade minimizem permanentemente o impacto das catástrofes, transformando tragédia em resiliência e a falta de apoio em uma grande corrente nacional de ajuda. Queremos convencer cada cidadão a fazer parte desta luta.</dd>
+    </dl>
+</section>
         
         <!--Transparência e Financiamento - sessão 3-->
-        <section>
-            <h2>Transparência e Financiamento</h2>
-            <h2>Somos uma Organização Sem Fins Lucrativos.</h2>
-            
-            <p>100% de todas as doações que recebemos são direcionadas integralmente para as famílias... Nossos recursos são aplicados diretamente em:</p>
-            
-            <ul>
-                <li>Compra de insumos essenciais (água potável, medicamentos, kits de higiene).</li>
-                <li>Logística e transporte urgente de equipes e donativos para zonas de crise.</li>
-                <li>Reestruturação de moradias e apoio financeiro direto a famílias.</li>
-            </ul>
+        <section class="transparenciaFinanciamento">
+            <div class="transparenciaFinanciamentoText">
+               <h2>Transparência e Financiamento</h2>
+               <h2>Somos uma Organização Sem Fins Lucrativos.</h2>  
+               <br>
+               <p>100% de todas as doações que recebemos são direcionadas integralmente para as famílias... Nossos recursos são aplicados diretamente em:</p>
+                <ul>
+                  <li>Compra de insumos essenciais (água potável, medicamentos, kits de higiene).</li>
+                  <li>Logística e transporte urgente de equipes e donativos para zonas de crise.</li>
+                  <li>Reestruturação de moradias e apoio financeiro direto a famílias.</li>
+               </ul>
+            </div>
+
+            <div class="transparenciaFinanciamentoImage">
             <img src="../media/semFinsLucrativos.png" alt="Imagem de transparência e doações">
+            </div>
         </section>
         <!--Nossa Equipe - sessão 4-->
-        <section>
-            <h2>Nossa Equipe: O Coração do Resgate</h2>
-            <p>Contamos hoje com uma rede robusta de mais de 500 profissionais e voluntários dedicados em prontidão. Nossa equipe é composta por:</p>
+        <section class="nossaEquipe">
+            <div class="nossaEquipeImg">
             <img src="../media/nossaEquipe.jpg" alt="Imagem da equipe Reage Brasil" width="600px">  
+            </div>
+            <div class="nossaEquipeText">
+            <h2>Nossa Equipe: O Coração do Resgate</h2>
+            <br>
+            <p>Contamos hoje com uma rede robusta de mais de 500 profissionais e voluntários dedicados em prontidão. Nossa equipe é composta por:</p>
             <ul>
                 <li>Socorristas e paramédicos treinados em primeiros socorros em cenários de risco.</li>
                 <li>Veterinários especializados em resgate e tratamento de animais em situação de emergência.</li>
                 <li>Arquitetos e engenheiros voluntários para planejar e executar a reconstrução de lares seguros.</li>
                 <li>Psicólogos que oferecem suporte emocional e acolhimento às vítimas do trauma.</li>
             </ul>
+            </div>
         </section>
         
     </main>

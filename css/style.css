@@ -135,6 +135,7 @@ header {
     overflow: hidden; 
 }
 
+/* Estilo da imagem na seção de chamada para engajamento */
 .chamadaImage {
     grid-column: 2 / 3;
     height: 100%;
@@ -168,16 +169,168 @@ header {
     color: white;
 }
 
+/* Estilo da seção de últimas notícias na tela do Index/Home*/
 #ultimas-noticias {
     padding: 30px 5%;
     background-color: #f9f9f9;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilo do Container Principal */
-.fotoResgateHome {
-    max-width: 500px;
+/* Estilo do texto na seção do Podcast na tela Sobre Nós */
+.podcast-texto {
+    grid-column: 1 / 2; 
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
 }
+
+/* Estilo do conteiner principal do podcast */
+#podcast-depoimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    gap: 30px;
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #3983c7;
+    color: white;
+    padding: 60px 5%;
+}
+
+/* Oculta o player de áudio */
+.podcast-player-hidden {
+    display: none; 
+}
+
+/* personalizar card estilo spotify */
+.podcast-card {
+    background-color: #7ccfff; /* Cor de fundo azul claro */
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+    /* Adicionando a imagem de fundo (sua logo!) */
+    background-image: url('../media/logoreagebr.jpg'); /* Substitua pelo caminho da sua logo */
+    background-size: cover; /* Cobre todo o card */
+    background-position: center;
+    background-blend-mode: overlay; /* Mistura a imagem com a cor de fundo */
+}
+
+.podcast-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.podcast-card p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Estilo do botão de play */
+.play-button {
+    background: none;
+    border: 2px solid white;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    padding: 10px 20px;
+    border-radius: 50%; 
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.nossaHistoria1 {
+    padding: 30px 5%;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.essenciaMissao2 {
+    padding: 30px 5%;
+    background-color: #3983c7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.estatisticasText h2, .nossaHistoria1 h2, .essenciaMissao2 h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: #000000;
+}
+
+
+.transparenciaFinanciamento {
+    display: flex; 
+    background-color: #f9f9f9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    gap: 30px;
+}
+
+.transparenciaFinanciamentoText {       
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);       
+    flex-basis: 55%;
+}
+
+
+.transparenciaFinanciamentoImage {
+    flex-basis: 45%; /
+    border-radius: 8px;
+    height: auto;
+}
+
+
+.transparenciaFinanciamentoImage img {
+    width: 100%; /
+    height: auto; 
+    
+    border-radius: 8px;
+    display: block; 
+}
+
+.nossaEquipe {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    gap: 30px;
+    background-color: #3983c7;
+}
+
+.nossaEquipeText {       
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;       
+    flex-basis: 55%;
+}
+
+.nossaEquipeImg {
+    flex-basis: 45%; /
+    border-radius: 8px;
+    height: auto;
+}
+
+.nossaEquipeImg img {
+    width: 100%; /
+    height: auto; 
+    
+    border-radius: 8px;
+    display: block; 
+}
+
+
+
+
+
+
+
+
 
 /* Estilo do Carrossel de Imagens */
 .carrossel-item {
