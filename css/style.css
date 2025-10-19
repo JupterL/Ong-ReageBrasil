@@ -1,3 +1,4 @@
+/*criando variavel de cores*/
 :root{
     /*tons azulados*/
     --cor-primaria: #3983c7;      /* azul é a cor principal e identidade do design*/
@@ -26,8 +27,6 @@
     --cor-branco: #FFFFFF;
     --cor-preto: #000000;
 }   
-
-
 
 * {
     box-sizing: border-box; 
