@@ -552,13 +552,12 @@ header {
 }
 
 .sidebar-blog{
- 
     min-height: 150px;
     background-color: #3983c7;
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-    border-end-end-radius: 8px;
+
 }
 
 .formnewsletter{
@@ -589,13 +588,192 @@ header {
        background-color: #2a64a0;
 }
 
+/*Estilo da escrita e fundo - Voluntariado*/
+.titulo-inscricao, .formulario-inscricao{
+    background-color: #3983c7;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+/*Estilo de todas as Divs do formulario - Voluntariado*/
+.formulario-inscricao div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+/*espaçamernto dos botoes de inscrição - voluntariado */
+.formulario-inscricao label{
+    margin-bottom: 5px;
+}
+
+/*Criando um espaçamento do formulario para o titulo da página*/
+.formulario-inscricao form.forminscricao{
+    padding: 5px;
+}
+
+/*estilo das caixas de inscrição - voluntariado */
+.formulario-inscricao input[type="text"],
+.formulario-inscricao input[type="email"],
+.formulario-inscricao input[type="tel"],
+.formulario-inscricao input[type="number"],
+.formulario-inscricao select,
+.formulario-inscricao textarea {
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px; 
+    font-size: 1em;
+    line-height: normal;
+    color: #333; 
+    background-color: white; 
+    display: block; 
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo do Rótulo (para descolar do input) */
+.formulario-inscricao label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white; 
+    font-size: 1em;
+}
+
+/*melhorando o fundo da area de inscrição - Voluntariado */
+.formulario-inscricao{
+    background-image: url('../media/venhaFazerParte.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: #3983c7;
+}
 
 
 
+/*Estilo do botão '' inviar inscrição '' - voluntariado */
+.formulario-inscricao button[type="submit"]{
+    display: block;
+    width: 20%;
+    padding: 6px;
 
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
 
+/*Estilo do botão '' inviar inscrição '' - voluntariado */
+.formulario-inscricao button[type="submit"]:hover {
+    background-color: #acbbca;
+}
 
+/*estilo do Nav - Contato */
+.contatogeral{
+    padding: 10px;
+    background-image: url('../media/equipeDoandoAlimentos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: #3983c7;
+}
 
+/*estilização da caixa de informações de contato - Contato */
+.contato-informacoes{
+    background-color: #3983c7;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilização da parte para entrarmos em contato - Contato */
+#form-contato{
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+
+}
+
+/*Botoes para nos enviar uma solicitação */
+#form-contato input[type="text"],
+#form-contato input[type="email"],
+#form-contato input[type="file"], 
+#form-contato textarea {
+    width: 100%;
+    padding: 5px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    color: 333;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    display: block;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    outline: none;
+}
+
+/*botoes para envio do formulario - contato */
+#form-contato button[type="submit"] {
+   display: block;
+   width: 100%;
+   padding: 15px;
+   background-color: #3983c7;
+   color: white;
+   border: none;
+   border-radius: 6px;
+   font-size: 1.2em;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   margin-top: 20px;
+
+}
+
+/*Fundo da area de transparencia - Transparencia */
+.transparencia{
+    background-color: #3983c7;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+/*Borda do canvas e formato -Transparencia*/
+#distribuicao-recursos,
+#evolucao-voluntarios {
+    margin: 20px auto;
+    border: 1px solid#DDDDDD ;
+    border-radius: 8px;
+    display: block;
+
+}
+
+/*Area de LGPD - Transparencia */
+.lgpd{
+    background-color:#f9f9f9; 
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/*Estilizando os titulos H3 da LGPD - Transparencia*/
+.lgpd h3 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
 
 
 /* Estilo do Carrossel de Imagens */
@@ -612,4 +790,311 @@ header {
     min-width: 300px;
     height: 200px;
     margin-right: 10px;
+}
+
+/*formulario de doação - Doações */
+#formulario-doacao{
+    background-color: #3983c7;
+    color: white;
+    width: 100%;
+    padding: 40px 5%;
+    margin: 0 auto;
+}
+
+/*formulario de doação - Doações */
+#formulario-doacao form{
+    max-width: 900px;
+    margin: 20px;
+    background-color:#f9f9f9; 
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+#formulario-doacao h2{
+   padding-left: 20px;
+}
+
+/*Estilo dos botoes e opcoes no formulario de doações - Doações*/
+#formulario-doacao input[type="text"],
+#formulario-doacao input[type="email"],
+#formulario-doacao input[type="tel"],
+#formulario-doacao input[type="number"],
+#formulario-doacao select {
+    width: 50%;
+    padding: 5px 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    color: #333;
+    font-size: 1em;
+    display: block;
+}
+
+/* Estilo para os títulos de grupo de campos - Doações */
+#formulario-doacao fieldset legend {
+    font-size: 1.25em; 
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px; 
+    padding-bottom: 5px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+/*estilo para os rótulos (label) - Doações */
+#formulario-doacao fieldset label {
+    display: block; 
+    margin-bottom: 8px;
+    color: #444; 
+    font-weight: 600;
+}
+
+/*Estilo do texto e caixinha de preenchimento - Doações */
+#formulario-doacao input[type="text"],
+#formulario-doacao input[type="email"],
+#formulario-doacao input[type="tel"],
+#formulario-doacao input[type="number"],
+#formulario-doacao select {
+    width: 50%; 
+    padding: 12px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    color: #333;
+    background-color: rgb(255, 255, 255);
+}
+
+/*caixinha de valor de doação - Doação*/
+#valor {
+    max-width: 150px; 
+    text-align: right; 
+}
+
+/* Corrigindo as Bolinhas de Rádio para ficarem lado a lado com o texto- Doação */
+.radio-options {
+    display: flex;
+    gap: 5px; 
+    margin-top: 10px;
+}
+
+/* Garante que o rótulo do rádio button fique na mesma linha da bolinha- Doação */
+.radio-options label {
+    display: inline-block; 
+    margin-bottom: 0; 
+}
+
+/*botao final de doação*/
+.cta-doar-final {
+    display: block;
+    width: 100%; 
+    padding: 15px;
+    font-size: 1.1em; 
+    font-weight: bold;
+    background-color: #3983c7; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+#chamada-transparencia{
+    margin: 10px;
+    background-color:#ffffff; 
+    color: black;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/*Estilo do footer*/
+footer {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #333333; 
+    color: #DDDDDD;          
+    padding: 20px 5%; 
+    font-family: Arial, sans-serif;
+    font-size: 0.9em; 
+}
+
+.links-uteis{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover {
+    color: #FF7A00;
+}
+
+/* ESTILO DO BOTÃO DOAÇÕES DE DESTAQUE NO HEADER */
+.botao-doar {
+    display: inline-block; 
+    background-color: #FF7A00; 
+    color: white !important; 
+    text-decoration: none;
+    padding: 10px 18px; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease;
+}
+
+.botao-doar:hover {
+    background-color: #e66700; 
+}
+
+.botao-doar:focus {
+    outline: 2px solid white; 
+    outline-offset: 2px;     
+    box-shadow: 0 0 5px rgba(255, 122, 0, 0.8);
+}
+
+.botao-doar:active {
+    transform: scale(0.98); 
+    background-color: #d85f00;
+}
+
+
+/*
+* ========================================================
+* RESPONSIVIDADE: QUEBRANDO LAYOUTS DE COLUNA (MOBILE-FIRST)
+* ========================================================
+*/
+@media (max-width: 768px) {
+    
+    .main-nav ul {
+        flex-direction: column; 
+        width: 100%;
+        align-items: center; 
+        gap: 0; 
+    }
+    .main-nav ul li {
+        width: 100%;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .logo-container {
+        flex-direction: column; 
+    }
+
+    .estatisticas,
+    .chamada-engajamento,
+    .nossaEquipe,
+    .transparenciaFinanciamento,
+    .artigo-conteudo, 
+    .conteudo-flex,
+    .artigo-conteudo-RS,
+    .artigo-conteudo-AM,
+    #podcast-depoimento, 
+    .blog-post { 
+        flex-direction: column; 
+        display: flex; 
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding-left: 5%; 
+        padding-right: 5%;
+    }
+    .heroText, .heartMedia, .estatisticasText, .equipeDoandoAlimentos, .chamadaText, .chamadaImage, .nossaEquipeText, .nossaEquipeImg, .transparenciaFinanciamentoText, .transparenciaFinanciamentoImage, .artigo-texto, .artigo-imagem, .nordesteTexto, .postAgasalhoText, .video-container {
+        
+        flex-basis: auto !important; 
+        width: 100% !important; 
+        
+        text-align: left; /
+        padding-right: 0 !important; 
+        margin-bottom: 15px; 
+    }
+
+    .heroText, .estatisticasText, .chamadaText, .nossaEquipeText, .transparenciaFinanciamentoText, .artigo-texto, .nordesteTexto, .postAgasalhoText {
+        order: 1; 
+    }
+
+    .heartMedia, .equipeDoandoAlimentos, .chamadaImage, .nossaEquipeImg, .transparenciaFinanciamentoImage, .artigo-imagem, .video-container {
+        order: 2; 
+        width: 100%;
+        height: 250px; 
+        overflow: hidden;
+        margin-bottom: 0; 
+    }
+}
+
+/* Responsividade para o Blog */
+@media (max-width: 768px) {
+    .containerCampanhaAgasalho {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 3%;
+    }
+
+    .postCampanhaAgasalho {
+        flex-direction: column;
+        padding: 20px 3%;
+    }
+
+    .postAgasalhoText {
+        width: 100%;
+    }
+
+
+    .video-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
+
+
+    .containerVitoriaAnimal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .postVitoriaAnimal {
+        flex-direction: column;
+    }
+
+    .vitoriaAnimalImg img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sidebar-blog {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .formnewsletter {
+        width: 100%;
+    }
+
+    .formnewsletter input,
+    .formnewsletter button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/*corrigir espaçamento em branco no mobile da vitoria animal e formulario newsletter */
+@media (max-width: 768px) {
+    .sidebar-blog {
+        margin-top: -10px !important; 
+    }
 }
