@@ -10,7 +10,7 @@
     --cor-alerta: #FF7A00;            /* laranja de Doação */
     --cor-alerta-hover: #e66700;      /* laranja Escuro (Hover do footer)*/
     --cor-alerta-active: #d85f00;     /* laranja Ativo (Efeito de Clique)*/
-    --rgba-laranja: rgba(255, 122, 0, 0.8); /* rgba laranja */
+    --rgba-laranja-sombra: rgba(255, 122, 0, 0.8); /* rgba laranja */
 
     /*cores neutras*/
     --cor-fundo-clara: #F9F9F9;   /* fundo das seções claras */
@@ -988,7 +988,7 @@ footer a:hover {
 .botao-doar:focus {
     outline: 2px solid var(--cor-branco); 
     outline-offset: 2px;     
-    box-shadow: 0 0 5px var(-rgba-laranja);
+    box-shadow: 0 0 5px var(--rgba-laranja-sombra);
 }
 
 .botao-doar:active {
@@ -999,7 +999,7 @@ footer a:hover {
 
 /*
 * ========================================================
-* RESPONSIVIDADE: QUEBRANDO LAYOUTS DE COLUNA (MOBILE-FIRST)
+* RESPONSIVIDADE: MOBILE
 * ========================================================
 */
 @media (max-width: 768px) {
