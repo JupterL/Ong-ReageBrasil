@@ -1,16 +1,48 @@
+:root{
+    /*tons azulados*/
+    --cor-primaria: #3983c7;      /* azul é a cor principal e identidade do design*/
+    --hover-nav:  #3d7bff;  /* azul hover navegação */
+    --incricao-home: #3d7bff; /*botao de inscrição da tela Home */
+    --fundo-podcast: #7ccfff; /* Cor de fundo azul claro para o podcast */
+
+    /* tons de laranjas */
+    --cor-alerta: #FF7A00;            /* laranja de Doação */
+    --cor-alerta-hover: #e66700;      /* laranja Escuro (Hover do footer)*/
+    --cor-alerta-active: #d85f00;     /* laranja Ativo (Efeito de Clique)*/
+    --rgba-laranja: rgba(255, 122, 0, 0.8); /* rgba laranja */
+
+    /*cores neutras*/
+    --cor-fundo-clara: #F9F9F9;   /* fundo das seções claras */
+    --cor-fundo-escura: #333333;  /* coloração do footer */
+    --cor-borda-suave: #CCCCCC;
+    --cor-text-nav: #3f3f3f;  /*coloração de navegação*/
+    --cinza-clarinho: rgba(255, 255, 255, 0.2); /*player podcast*/
+    --cinza-rgb: rgba(0, 0, 0, 0.05);
+    --form-inscricao: #acbbca; /*formulario de inscrição*/
+    --shadow-box-contato: rgba(0, 0, 0, 0.1); /*sombra fundo de contato*/
+
+    /* CORES DE BORDA E TEXTO */    
+    --cor-borda-clara: #EEEEEE;      
+    --cor-branco: #FFFFFF;
+    --cor-preto: #000000;
+}   
+
+
+
 * {
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
+
 /* Estilo do Cabeçalho */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 5%;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #EEEEEE;
+    background-color: var(--cor-branco);
+    border-bottom: 1px solid var(--cor-borda-clara);
 }
 /* Container da logo e título */
 .logo-container {
@@ -29,7 +61,7 @@ header {
 /* Estilo do Título H1 */
 .logo-container h1 {
     font-size: 2.2em; 
-    color: #333333; 
+    color: var(--cor-fundo-escura); 
     margin: 0; 
 }
 
@@ -46,7 +78,7 @@ header {
 /* Estilo dos Links do Menu */
 .main-nav ul li a {
     text-decoration: none; 
-    color: #3f3f3f; 
+    color: var(--cor-text-nav); 
     font-weight: bold;
     font-size: 1.1em;
     font-family: Arial, Helvetica, sans-serif;
@@ -56,7 +88,7 @@ header {
 
 /* Efeito ao passar o mouse sobre os links do menu */
 .main-nav ul li a:hover {
-    color: #3d7bff; 
+    color: var(--hover-nav); 
 
 }
 
@@ -67,8 +99,8 @@ header {
     gap: 30px; 
     align-items: center; 
     min-height: 350px; 
-    background-color: #3983c7; 
-    color: white; 
+    background-color: var(--cor-primaria); 
+    color: var(--cor-branco); 
     padding: 30px 5%; 
     overflow: hidden; 
 }
@@ -129,8 +161,8 @@ header {
     gap: 30px; 
     align-items: center; 
     min-height: 350px; 
-    background-color: #3983c7; 
-    color: white; 
+    background-color: var(--cor-primaria); 
+    color: var(--cor-branco);
     padding: 30px 5%; 
     overflow: hidden; 
 }
@@ -153,8 +185,8 @@ header {
 /* Estilo do botão de inscrição da tela do index/Home */
 .voluntariadoInicial {
    display: inline-block;
-   background-color: #EEEEEE;
-   color: black;
+   background-color: var(--cor-fundo-clara);
+   color: var(--cor-preto);
    text-decoration: none;
    padding: 12px 25px;
    border-radius: 6px;
@@ -165,14 +197,14 @@ header {
 
 /* Efeito ao passar o mouse sobre o botão de inscrição da tela do index/Home */
 .voluntariadoInicial:hover {
-    background-color: #3d7bff;
-    color: white;
+    background-color: var(--incricao-home);
+    color: var(--cor-branco);
 }
 
 /* Estilo da seção de últimas notícias na tela do Index/Home*/
 #ultimas-noticias {
     padding: 30px 5%;
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-clara);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -189,8 +221,8 @@ header {
     grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
     gap: 30px;
     align-items: center; /* Centraliza verticalmente */
-    background-color: #3983c7;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
     padding: 60px 5%;
 }
 
@@ -201,13 +233,13 @@ header {
 
 /* personalizar card estilo spotify - Sobre Nós */
 .podcast-card {
-    background-color: #7ccfff; /* Cor de fundo azul claro */
-    color: rgb(255, 255, 255);
+    background-color: var(--fundo-podcast); /* Cor de fundo azul claro */
+    color: var(--incricao-home);
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--cor-preto);
     background-image: url('../media/logoreagebr.jpg'); 
     background-size: cover; /* Cobre todo o card */
     background-position: center;
@@ -228,8 +260,8 @@ header {
 /* Estilo do botão de play no Podcast - Sobre Nós**/
 .play-button {
     background: none;
-    border: 2px solid white;
-    color: rgb(0, 0, 0);
+    border: 2px solid var(--cor-branco);
+    color: black;
     font-size: 2em;
     padding: 10px 20px;
     border-radius: 50%; 
@@ -240,36 +272,36 @@ header {
 
 /* Efeito ao passar o mouse sobre o botão de play no Podcast - Sobre Nós**/
 .play-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--cinza-clarinho);
 }
 
 
 /* Estilo das seções Nossa História, Essência e Missão - Sobre Nós */
 .nossaHistoria1 {
     padding: 30px 5%;
-    background-color: #ffffff;
+    background-color: var(--cor-fundo-clara);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilo das seções Nossa História, Essência e Missão - Sobre Nós */
 .essenciaMissao2 {
     padding: 30px 5%;
-    background-color: #3983c7;
+    background-color: var(--cor-primaria);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--cor-branco);
 }
 
 /* Estilo dos títulos h2 das seções Nossa História, Essência e Missão - Sobre Nós */
 .estatisticasText h2, .nossaHistoria1 h2 {
     margin-bottom: 15px;
     font-size: 2em;
-    color: #000000;
+    color: var(--cor-preto);
 }
 
 /* Estilo dos títulos h2 das seções Nossa História, Essência e Missão - Sobre Nós */
 .transparenciaFinanciamento {
     display: flex; 
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-clara);
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
@@ -279,7 +311,7 @@ header {
 /* Estilo do texto na seção de Transparência e Financiamento - Sobre Nós */
 .transparenciaFinanciamentoText {       
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);       
+    color: var(--cor-preto);      
     flex-basis: 55%;
 }
 
@@ -306,13 +338,13 @@ header {
     align-items: center;
     padding: 30px 5%;
     gap: 30px;
-    background-color: #3983c7;
+    background-color: var(--cor-primaria);
 }
 
 /* Estilo do texto na seção Nossa Equipe - Sobre Nós */
 .nossaEquipeText {       
     font-family: Arial, Helvetica, sans-serif;
-    color: white;       
+    color: var(--cor-branco);      
     flex-basis: 55%;
 }
 
@@ -336,14 +368,14 @@ header {
 /*Projetos e Ações - Tela Projetos*/
 .projetosTextInicial {
     padding: 30px 5%;
-    background-color: #3983c7; 
+    background-color: var(--cor-primaria);
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: var(--cor-branco);
 }
 
 /* Estilo da seção Ação Petrópolis - Tela Projetos*/
 .acaoPetropolis {
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-clara);
     padding: 30px 5%;
     margin-bottom: 0px; 
     overflow: hidden;
@@ -368,12 +400,12 @@ header {
 
 /* Estilo da seção Ação Nordeste - Tela Projetos*/
 .acaoNordeste {
-    background-color: #3983c7; 
+    background-color: var(--cor-primaria); 
     padding: 30px 5%;
     margin-bottom: 0px; 
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--cor-branco);
 }
 
 /* Estilo do conteúdo flexível da seção Ação Nordeste - Tela Projetos*/
@@ -404,7 +436,7 @@ header {
 
 /* Estilo do texto da seção Ação São Paulo - Tela Projetos*/
 .acaoSaoPaulo {
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-clara);
     padding: 30px 5%;
     margin-bottom: 0px; 
     overflow: hidden;
@@ -434,12 +466,12 @@ header {
 
 /* Estilo da seção Ação Rio Grande do Sul - Tela Projetos*/
 .acaoRioGrandeSul {
-    background-color: #3983c7; 
+    background-color: var(--cor-primaria);
     padding: 30px 5%;
     margin-bottom: 0px; 
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--cor-branco);
 }
 
 /* Estilo do conteúdo flexível da seção Ação Rio Grande do Sul - Tela Projetos*/
@@ -460,7 +492,7 @@ header {
 
 /* Estilo do texto da seção Ação Amazonas - Tela Projetos*/
 .acaoAmazonia {
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-clara);
     padding: 30px 5%;
     margin-bottom: 0px; 
     overflow: hidden;
@@ -495,8 +527,8 @@ header {
  align-items: center;
  padding: 30px 5%;
  gap: 30px;
- background-color: #3983c7;
- color: #ffffff;
+ background-color: var(--cor-primaria);
+ color: var(--cor-branco);
  font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -532,8 +564,8 @@ header {
  align-items: center;
  padding: 30px 5%;
  gap: 30px;
- background-color:#f9f9f9; 
- color: #0f0000;
+ background-color: var(--cor-fundo-clara);
+ color: var(--cor-preto);
  font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -553,8 +585,8 @@ header {
 
 .sidebar-blog{
     min-height: 150px;
-    background-color: #3983c7;
-    color: #FFFFFF;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
 
@@ -570,13 +602,13 @@ header {
 .formnewsletter input{
     flex-grow: 0;
     padding: 8px 12px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--cor-borda-suave);
     border-radius: 4px;
 }
 
 .formnewsletter button{
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
     padding: 8px 15px;
     font-weight: bold;
     cursor: pointer;
@@ -584,14 +616,10 @@ header {
 }
 
 
-.formnewsletter button [type="submit"]:hover{
-       background-color: #2a64a0;
-}
-
 /*Estilo da escrita e fundo - Voluntariado*/
 .titulo-inscricao, .formulario-inscricao{
-    background-color: #3983c7;
-    color: #FFFFFF;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
 }
@@ -622,14 +650,14 @@ header {
 .formulario-inscricao textarea {
     width: 400px;
     padding: 5px 10px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--cor-borda-suave);
     border-radius: 6px; 
     font-size: 1em;
     line-height: normal;
-    color: #333; 
-    background-color: white; 
+    color: var(--cor-preto);
+    background-color: var(--cor-branco);
     display: block; 
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 2px var(--cinza-rgb);
 }
 
 /* Estilo do Rótulo (para descolar do input) */
@@ -637,7 +665,7 @@ header {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: white; 
+    color: var(--cor-branco);
     font-size: 1em;
 }
 
@@ -647,7 +675,7 @@ header {
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    background-color: #3983c7;
+    background-color: var(--cor-primaria);
 }
 
 
@@ -657,9 +685,8 @@ header {
     display: block;
     width: 20%;
     padding: 6px;
-
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
     border: none;
     border-radius: 6px;
     font-weight: bold;
@@ -669,7 +696,7 @@ header {
 
 /*Estilo do botão '' inviar inscrição '' - voluntariado */
 .formulario-inscricao button[type="submit"]:hover {
-    background-color: #acbbca;
+    background-color: var(--form-inscricao);
 }
 
 /*estilo do Nav - Contato */
@@ -679,29 +706,29 @@ header {
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    background-color: #3983c7;
+    background-color: var(--cor-primaria);
 }
 
 /*estilização da caixa de informações de contato - Contato */
 .contato-informacoes{
-    background-color: #3983c7;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
     font-family: Arial, sans-serif;
     max-width: 600px;
     margin: 30px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px var(--shadow-box-contato);
 }
 
 /*Estilização da parte para entrarmos em contato - Contato */
 #form-contato{
     max-width: 600px;
     margin: 30px auto;
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo-clara);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px var(--shadow-box-contato);
     font-family: Arial, sans-serif;
 
 }
@@ -713,13 +740,13 @@ header {
 #form-contato textarea {
     width: 100%;
     padding: 5px 15px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--cor-borda-suave);
     border-radius: 6px;
-    color: 333;
+    color: var(-cor-preto);
     font-family: Arial, sans-serif;
     font-size: 1em;
     display: block;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 2px var(--shadow-box-contato);
     outline: none;
 }
 
@@ -728,8 +755,8 @@ header {
    display: block;
    width: 100%;
    padding: 15px;
-   background-color: #3983c7;
-   color: white;
+   background-color: var(--cor-primaria);
+   color: var(--cor-branco);
    border: none;
    border-radius: 6px;
    font-size: 1.2em;
@@ -742,8 +769,8 @@ header {
 
 /*Fundo da area de transparencia - Transparencia */
 .transparencia{
-    background-color: #3983c7;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
     font-family: Arial, sans-serif;
     padding: 50px;
 }
@@ -752,7 +779,7 @@ header {
 #distribuicao-recursos,
 #evolucao-voluntarios {
     margin: 20px auto;
-    border: 1px solid#DDDDDD ;
+    border: 1px solid var(--cor-borda-clara) ;
     border-radius: 8px;
     display: block;
 
@@ -760,8 +787,8 @@ header {
 
 /*Area de LGPD - Transparencia */
 .lgpd{
-    background-color:#f9f9f9; 
-    color: black;
+    background-color: var(--cor-fundo-clara);
+    color: var(--cor-preto);
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
@@ -771,7 +798,7 @@ header {
 .lgpd h3 {
     color: #333;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--cor-borda-clara);
     padding-bottom: 5px;
 }
 
@@ -794,8 +821,8 @@ header {
 
 /*formulario de doação - Doações */
 #formulario-doacao{
-    background-color: #3983c7;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
     width: 100%;
     padding: 40px 5%;
     margin: 0 auto;
@@ -805,12 +832,12 @@ header {
 #formulario-doacao form{
     max-width: 900px;
     margin: 20px;
-    background-color:#f9f9f9; 
-    color: black;
+    background-color: var(--cor-fundo-clara);
+    color: var(--cor-preto);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px var(--cinza-rgb);
+    border: 1px solid var(--cor-fundo-clara);
     font-family: Arial, sans-serif;
 }
 
@@ -826,9 +853,9 @@ header {
 #formulario-doacao select {
     width: 50%;
     padding: 5px 10px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--cor-borda-suave);
     border-radius: 6px;
-    color: #333;
+    color: var(--cor-preto);
     font-size: 1em;
     display: block;
 }
@@ -837,7 +864,7 @@ header {
 #formulario-doacao fieldset legend {
     font-size: 1.25em; 
     font-weight: 700;
-    color: #333;
+    color: var(--cor-preto);
     margin-bottom: 25px; 
     padding-bottom: 5px;
 }
@@ -850,7 +877,7 @@ header {
 #formulario-doacao fieldset label {
     display: block; 
     margin-bottom: 8px;
-    color: #444; 
+    color: var(--cor-preto);
     font-weight: 600;
 }
 
@@ -862,10 +889,10 @@ header {
 #formulario-doacao select {
     width: 50%; 
     padding: 12px 15px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--cor-borda-suave);
     border-radius: 6px;
-    color: #333;
-    background-color: rgb(255, 255, 255);
+    color: var(--cor-preto);
+    background-color: var(--cor-branco);
 }
 
 /*caixinha de valor de doação - Doação*/
@@ -894,8 +921,8 @@ header {
     padding: 15px;
     font-size: 1.1em; 
     font-weight: bold;
-    background-color: #3983c7; 
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -905,8 +932,8 @@ header {
 
 #chamada-transparencia{
     margin: 10px;
-    background-color:#ffffff; 
-    color: black;
+    background-color: var(--cor-fundo-clara);
+    color: var(--cor-preto);
     padding: 30px;
     font-family: Arial, sans-serif;
 }
@@ -917,8 +944,8 @@ footer {
     justify-content: column;
     align-items: center;
     gap: 15px;
-    background-color: #333333; 
-    color: #DDDDDD;          
+    background-color: var(--cor-fundo-escura); 
+    color: var(--cor-branco);         
     padding: 20px 5%; 
     font-family: Arial, sans-serif;
     font-size: 0.9em; 
@@ -936,18 +963,18 @@ footer {
 }
 
 footer a{
-    color: white;
+    color: var(--cor-branco);
 }
 
 footer a:hover {
-    color: #FF7A00;
+    color: var(--cor-alerta);
 }
 
 /* ESTILO DO BOTÃO DOAÇÕES DE DESTAQUE NO HEADER */
 .botao-doar {
     display: inline-block; 
-    background-color: #FF7A00; 
-    color: white !important; 
+    background-color: var(--cor-alerta); 
+    color: var(--cor-branco) !important; 
     text-decoration: none;
     padding: 10px 18px; 
     border-radius: 6px; 
@@ -956,18 +983,18 @@ footer a:hover {
 }
 
 .botao-doar:hover {
-    background-color: #e66700; 
+    background-color: var(--cor-alerta-hover);
 }
 
 .botao-doar:focus {
-    outline: 2px solid white; 
+    outline: 2px solid var(--cor-branco); 
     outline-offset: 2px;     
-    box-shadow: 0 0 5px rgba(255, 122, 0, 0.8);
+    box-shadow: 0 0 5px var(-rgba-laranja);
 }
 
 .botao-doar:active {
     transform: scale(0.98); 
-    background-color: #d85f00;
+    background-color: var(--cor-alerta-active);
 }
 
 
