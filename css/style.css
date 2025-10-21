@@ -1002,6 +1002,64 @@ footer a:hover {
 * RESPONSIVIDADE: MOBILE
 * ========================================================
 */
+@media (max-width: 425px) {
+    .containerCampanhaAgasalho {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 3%;
+    }
+
+    .postCampanhaAgasalho {
+        flex-direction: column;
+        padding: 20px 3%;
+    }
+
+    .postAgasalhoText {
+        width: 100%;
+    }
+
+
+    .video-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
+
+
+    .containerVitoriaAnimal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .postVitoriaAnimal {
+        flex-direction: column;
+    }
+
+    .vitoriaAnimalImg img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sidebar-blog {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .formnewsletter {
+        width: 100%;
+    }
+
+    .formnewsletter input,
+    .formnewsletter button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
 @media (max-width: 768px) {
     
     .main-nav ul {
@@ -1060,63 +1118,7 @@ footer a:hover {
 }
 
 /* Responsividade para o Blog */
-@media (max-width: 768px) {
-    .containerCampanhaAgasalho {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 3%;
-    }
 
-    .postCampanhaAgasalho {
-        flex-direction: column;
-        padding: 20px 3%;
-    }
-
-    .postAgasalhoText {
-        width: 100%;
-    }
-
-
-    .video-container {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .video-container iframe {
-        height: 250px;
-    }
-
-
-    .containerVitoriaAnimal {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .postVitoriaAnimal {
-        flex-direction: column;
-    }
-
-    .vitoriaAnimalImg img {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .sidebar-blog {
-        width: 100%;
-        margin-top: 30px;
-        padding: 20px;
-    }
-
-    .formnewsletter {
-        width: 100%;
-    }
-
-    .formnewsletter input,
-    .formnewsletter button {
-        width: 100%;
-        margin: 5px 0;
-    }
-}
 
 /*corrigir espaçamento em branco no mobile da vitoria animal e formulario newsletter */
 @media (max-width: 768px) {
@@ -1124,3 +1126,4 @@ footer a:hover {
         margin-top: -10px !important; 
     }
 }
+
