@@ -1,35 +1,49 @@
 /*criando variavel de cores*/
-:root{
+:root {
     /*tons azulados*/
-    --cor-primaria: #3983c7;      /* azul é a cor principal e identidade do design*/
-    --hover-nav:  #3d7bff;  /* azul hover navegação */
-    --incricao-home: #3d7bff; /*botao de inscrição da tela Home */
-    --fundo-podcast: #7ccfff; /* Cor de fundo azul claro para o podcast */
+    --cor-primaria: #3983c7;
+    /* azul é a cor principal e identidade do design*/
+    --hover-nav: #3d7bff;
+    /* azul hover navegação */
+    --incricao-home: #3d7bff;
+    /*botao de inscrição da tela Home */
+    --fundo-podcast: #7ccfff;
+    /* Cor de fundo azul claro para o podcast */
 
     /* tons de laranjas */
-    --cor-alerta: #FF7A00;            /* laranja de Doação */
-    --cor-alerta-hover: #e66700;      /* laranja Escuro (Hover do footer)*/
-    --cor-alerta-active: #d85f00;     /* laranja Ativo (Efeito de Clique)*/
-    --rgba-laranja-sombra: rgba(255, 122, 0, 0.8); /* rgba laranja */
+    --cor-alerta: #FF7A00;
+    /* laranja de Doação */
+    --cor-alerta-hover: #e66700;
+    /* laranja Escuro (Hover do footer)*/
+    --cor-alerta-active: #d85f00;
+    /* laranja Ativo (Efeito de Clique)*/
+    --rgba-laranja-sombra: rgba(255, 122, 0, 0.8);
+    /* rgba laranja */
 
     /*cores neutras*/
-    --cor-fundo-clara: #F9F9F9;   /* fundo das seções claras */
-    --cor-fundo-escura: #333333;  /* coloração do footer */
+    --cor-fundo-clara: #F9F9F9;
+    /* fundo das seções claras */
+    --cor-fundo-escura: #333333;
+    /* coloração do footer */
     --cor-borda-suave: #CCCCCC;
-    --cor-text-nav: #3f3f3f;  /*coloração de navegação*/
-    --cinza-clarinho: rgba(255, 255, 255, 0.2); /*player podcast*/
+    --cor-text-nav: #3f3f3f;
+    /*coloração de navegação*/
+    --cinza-clarinho: rgba(255, 255, 255, 0.2);
+    /*player podcast*/
     --cinza-rgb: rgba(0, 0, 0, 0.05);
-    --form-inscricao: #acbbca; /*formulario de inscrição*/
-    --shadow-box-contato: rgba(0, 0, 0, 0.1); /*sombra fundo de contato*/
+    --form-inscricao: #acbbca;
+    /*formulario de inscrição*/
+    --shadow-box-contato: rgba(0, 0, 0, 0.1);
+    /*sombra fundo de contato*/
 
-    /* CORES DE BORDA E TEXTO */    
-    --cor-borda-clara: #EEEEEE;      
+    /* CORES DE BORDA E TEXTO */
+    --cor-borda-clara: #EEEEEE;
     --cor-branco: #FFFFFF;
     --cor-preto: #000000;
-}   
+}
 
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -43,84 +57,90 @@ header {
     background-color: var(--cor-branco);
     border-bottom: 1px solid var(--cor-borda-clara);
 }
+
+body, html {
+    min-height: 100vh;
+}
+
 /* Container da logo e título */
 .logo-container {
-    display: flex; 
-    align-items: center; 
-    gap: 15px; 
-    margin-bottom: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 /* tamanho da logo */
-.logo-container img.logo { 
-    max-width: 200px; 
+.logo-container img.logo {
+    max-width: 200px;
     height: auto;
 }
 
 /* Estilo do Título H1 */
 .logo-container h1 {
-    font-size: 2.2em; 
-    color: var(--cor-fundo-escura); 
-    margin: 0; 
+    font-size: 2.2em;
+    color: var(--cor-fundo-escura);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* alinhamento do menu de navegação */
 .main-nav ul {
-    list-style: none; 
-    display: flex; 
-    justify-content: center; 
-    gap: 25px; 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
     padding: 0;
     margin: 0;
 }
 
 /* Estilo dos Links do Menu */
 .main-nav ul li a {
-    text-decoration: none; 
-    color: var(--cor-text-nav); 
+    text-decoration: none;
+    color: var(--cor-text-nav);
     font-weight: bold;
     font-size: 1.1em;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px 10px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 /* Efeito ao passar o mouse sobre os links do menu */
 .main-nav ul li a:hover {
-    color: var(--hover-nav); 
+    color: var(--hover-nav);
 
 }
 
 /* Estilo da Seção inicial - tela de index*/
 #hero {
     display: grid;
-    grid-template-columns: 55% 1fr; 
-    gap: 30px; 
-    align-items: center; 
-    min-height: 350px; 
-    background-color: var(--cor-primaria); 
-    color: var(--cor-branco); 
-    padding: 30px 5%; 
-    overflow: hidden; 
+    grid-template-columns: 55% 1fr;
+    gap: 30px;
+    align-items: center;
+    min-height: 350px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: 30px 5%;
+    overflow: hidden;
 }
 
 /* Estilo da Seção inicial - tela de index*/
 .heroText {
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2;
     font-family: Arial, Helvetica, sans-serif;
     align-self: center;
 }
 
 /* Estilo da imagem na seção inicial - tela de index */
 .heartMedia {
-    height: 100%; 
-    overflow: hidden; 
+    height: 100%;
+    overflow: hidden;
 }
 
 /* Estilo da imagem na seção inicial - tela de index*/
 .heartMedia img {
-    grid-column: 2 / 3; 
-    height: 100%; 
+    grid-column: 2 / 3;
+    height: 100%;
     overflow: hidden;
     border-radius: 8px;
 
@@ -128,15 +148,15 @@ header {
 
 /* Estilo da seção de estatísticas - index*/
 .estatisticas {
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 5%;
-  gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    gap: 30px;
 }
 
 /* Estilo da imagem na seção de estatísticas quais contem pessoas doando - index */
-.equipeDoandoAlimentos{
+.equipeDoandoAlimentos {
     flex-basis: 45%;
 }
 
@@ -155,16 +175,18 @@ header {
 
 /* Estilo da seção de chamada para engajamento - index  */
 .chamada-engajamento {
-    display: grid;
-    grid-template-columns: 55% 1fr; 
-    gap: 30px; 
-    align-items: center; 
-    min-height: 350px; 
-    background-color: var(--cor-primaria); 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    gap: 20px;
+    padding: 20px 5%;
+    background-color: var(--cor-primaria);
     color: var(--cor-branco);
-    padding: 30px 5%; 
-    overflow: hidden; 
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
+
 
 /* Estilo da imagem na seção de chamada para engajamento - index */
 .chamadaImage {
@@ -176,19 +198,19 @@ header {
 
 /* Estilo do texto na seção de chamada para engajamento - index/Home */
 .chamadaText {
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2;
     font-family: Arial, Helvetica, sans-serif;
     align-self: center;
 }
 
 /* Estilo do botão de inscrição da tela do index/Home */
 .voluntariadoInicial {
-   display: inline-block;
-   background-color: var(--cor-fundo-clara);
-   color: var(--cor-preto);
-   text-decoration: none;
-   padding: 12px 25px;
-   border-radius: 6px;
+    display: inline-block;
+    background-color: var(--cor-fundo-clara);
+    color: var(--cor-preto);
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
     font-weight: bold;
     margin-top: 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -209,7 +231,7 @@ header {
 
 /* Estilo do texto na seção do Podcast na tela Sobre Nós */
 .podcast-texto {
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2;
     font-family: Arial, Helvetica, sans-serif;
     align-self: center;
 }
@@ -217,9 +239,11 @@ header {
 /* Estilo do conteiner principal do podcast - Sobre Nós */
 #podcast-depoimento {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas iguais */
     gap: 30px;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
     padding: 60px 5%;
@@ -227,23 +251,26 @@ header {
 
 /* Oculta o player de áudio - Sobre Nós*/
 .podcast-player-hidden {
-    display: none; 
+    display: none;
 }
 
 /* personalizar card estilo spotify - Sobre Nós */
 .podcast-card {
-    background-color: var(--fundo-podcast); /* Cor de fundo azul claro */
+    background-color: var(--fundo-podcast);
+    /* Cor de fundo azul claro */
     color: var(--incricao-home);
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
     box-shadow: var(--cor-preto);
-    background-image: url('../media/logoreagebr.jpg'); 
-    background-size: cover; /* Cobre todo o card */
+    background-image: url('../media/logoreagebr.jpg');
+    background-size: cover;
+    /* Cobre todo o card */
     background-position: center;
-    background-blend-mode: overlay; 
+    background-blend-mode: overlay;
 }
+
 /* Estilo do título e descrição do card - Sobre Nós*/
 .podcast-card h3 {
     margin-bottom: 10px;
@@ -263,7 +290,7 @@ header {
     color: black;
     font-size: 2em;
     padding: 10px 20px;
-    border-radius: 50%; 
+    border-radius: 50%;
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s;
@@ -291,7 +318,8 @@ header {
 }
 
 /* Estilo dos títulos h2 das seções Nossa História, Essência e Missão - Sobre Nós */
-.estatisticasText h2, .nossaHistoria1 h2 {
+.estatisticasText h2,
+.nossaHistoria1 h2 {
     margin-bottom: 15px;
     font-size: 2em;
     color: var(--cor-preto);
@@ -299,7 +327,7 @@ header {
 
 /* Estilo dos títulos h2 das seções Nossa História, Essência e Missão - Sobre Nós */
 .transparenciaFinanciamento {
-    display: flex; 
+    display: flex;
     background-color: var(--cor-fundo-clara);
     justify-content: space-between;
     align-items: center;
@@ -307,32 +335,33 @@ header {
     gap: 30px;
 }
 
+
 /* Estilo do texto na seção de Transparência e Financiamento - Sobre Nós */
-.transparenciaFinanciamentoText {       
+.transparenciaFinanciamentoText {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--cor-preto);      
+    color: var(--cor-preto);
     flex-basis: 55%;
 }
 
 /* Estilo da imagem na seção de Transparência e Financiamento - Sobre Nós */
 .transparenciaFinanciamentoImage {
-    flex-basis: 45%; /
+    flex-basis: 45%;
     border-radius: 8px;
     height: auto;
 }
 
 /* Estilo da imagem na seção de Transparência e Financiamento - Sobre Nós */
 .transparenciaFinanciamentoImage img {
-    width: 100%; /
-    height: auto; 
-    
+    width: 100%;
+    height: auto;
+
     border-radius: 8px;
-    display: block; 
+    display: block;
 }
 
 /* Estilo da seção Nossa Equipe - Sobre Nós */
 .nossaEquipe {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
@@ -341,26 +370,26 @@ header {
 }
 
 /* Estilo do texto na seção Nossa Equipe - Sobre Nós */
-.nossaEquipeText {       
+.nossaEquipeText {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--cor-branco);      
+    color: var(--cor-branco);
     flex-basis: 55%;
 }
 
 /* Estilo da imagem na seção Nossa Equipe - Sobre Nós */
 .nossaEquipeImg {
-    flex-basis: 45%; /
+    flex-basis: 45%;
     border-radius: 8px;
     height: auto;
 }
 
 /* Estilo da imagem na seção Nossa Equipe - Sobre Nós */
 .nossaEquipeImg img {
-    width: 100%; 
-    height: auto; 
-    
+    width: 100%;
+    height: auto;
+
     border-radius: 8px;
-    display: block; 
+    display: block;
 }
 
 
@@ -376,7 +405,7 @@ header {
 .acaoPetropolis {
     background-color: var(--cor-fundo-clara);
     padding: 30px 5%;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -384,24 +413,24 @@ header {
 /* Estilo do conteúdo do artigo - Tela de Projetos*/
 .artigo-conteudo {
     display: grid;
-    grid-template-columns: 55% 1fr; 
-    gap: 30px; 
-    align-items: start; 
+    grid-template-columns: 55% 1fr;
+    gap: 30px;
+    align-items: start;
 }
 
 /* Estilo da imagem do artigo - Tela de Projetos*/
 .artigo-imagem img {
-    width: 100%; 
-    height: 300px; 
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
 
 /* Estilo da seção Ação Nordeste - Tela Projetos*/
 .acaoNordeste {
-    background-color: var(--cor-primaria); 
+    background-color: var(--cor-primaria);
     padding: 30px 5%;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-branco);
@@ -409,12 +438,12 @@ header {
 
 /* Estilo do conteúdo flexível da seção Ação Nordeste - Tela Projetos*/
 .conteudo-flex {
-    display: flex; 
-    flex-direction: row-reverse; 
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 /* Estilo do título h3 da seção Ação Nordeste - Tela Projetos*/
@@ -425,7 +454,7 @@ header {
 
 /* Estilo do texto da seção Ação Nordeste - Tela Projetos*/
 .nordesteTexto {
-    flex-basis: 55%; 
+    flex-basis: 55%;
 }
 
 /* Estilo da imagem da seção Ação Nordeste - Tela Projetos*/
@@ -437,7 +466,7 @@ header {
 .acaoSaoPaulo {
     background-color: var(--cor-fundo-clara);
     padding: 30px 5%;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -445,21 +474,22 @@ header {
 /* Estilo do conteúdo flexível da seção Ação São Paulo - Tela Projetos*/
 .conteudo-flex-SP {
     display: grid;
-    grid-template-columns: 55% 1fr; 
-    gap: 30px; 
-    align-items: start; 
+    grid-template-columns: 55% 1fr;
+    gap: 30px;
+    align-items: start;
 }
 
 /* Estilo da imagem do artigo - SP - Tela de Projetos*/
 .artigo-imagem img {
-    width: 100%; 
-    height: 300px; 
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.artigo-texto, .artigo-imagem {
-    flex-basis: 55%; 
+.artigo-texto,
+.artigo-imagem {
+    flex-basis: 55%;
 }
 
 
@@ -467,7 +497,7 @@ header {
 .acaoRioGrandeSul {
     background-color: var(--cor-primaria);
     padding: 30px 5%;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-branco);
@@ -475,12 +505,12 @@ header {
 
 /* Estilo do conteúdo flexível da seção Ação Rio Grande do Sul - Tela Projetos*/
 .artigo-conteudo-RS {
-    display: flex; 
-    flex-direction: row-reverse; 
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 /* Estilo do título h3 da seção Ação Rio Grande do Sul - Tela Projetos*/
@@ -493,7 +523,7 @@ header {
 .acaoAmazonia {
     background-color: var(--cor-fundo-clara);
     padding: 30px 5%;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -501,38 +531,39 @@ header {
 /* Estilo do conteúdo flexível da seção Amazonas - Tela Projetos*/
 .artigo-conteudo-AM {
     display: grid;
-    grid-template-columns: 55% 1fr; 
-    gap: 30px; 
-    align-items: start; 
+    grid-template-columns: 55% 1fr;
+    gap: 30px;
+    align-items: start;
 }
 
 /* Estilo da imagem do artigo - Tela de Projetos*/
 .artigo-imagem img {
-    width: 100%; 
-    height: 300px; 
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
 
 /* Estilo do texto e imagem da seção Ação Amazonas - Tela Projetos*/
-.artigo-texto, .artigo-imagem {
-    flex-basis: 55%; 
+.artigo-texto,
+.artigo-imagem {
+    flex-basis: 55%;
 }
 
 /* Estilo do container da campanha do agasalho - Blog*/
-.containerCampanhaAgasalho{
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 30px 5%;
- gap: 30px;
- background-color: var(--cor-primaria);
- color: var(--cor-branco);
- font-family: Arial, Helvetica, sans-serif;
+.containerCampanhaAgasalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    gap: 30px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.postCampanhaAgasalho{
+.postCampanhaAgasalho {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -540,16 +571,16 @@ header {
     padding: 30px 5%;
 }
 
-.postAgasalhoText{
+.postAgasalhoText {
     flex-basis: 55%;
 }
 
-.video-container{
-  flex-basis: 40%;
+.video-container {
+    flex-basis: 40%;
 
 }
 
-.video-container iframe{
+.video-container iframe {
     width: 100%;
     height: 300px;
     max-width: 100%;
@@ -557,18 +588,18 @@ header {
     border-radius: 5%;
 }
 
-.containerVitoriaAnimal{
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 30px 5%;
- gap: 30px;
- background-color: var(--cor-fundo-clara);
- color: var(--cor-preto);
- font-family: Arial, Helvetica, sans-serif;
+.containerVitoriaAnimal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    gap: 30px;
+    background-color: var(--cor-fundo-clara);
+    color: var(--cor-preto);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.postVitoriaAnimal{
+.postVitoriaAnimal {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -576,13 +607,13 @@ header {
     gap: 40px;
 }
 
-.vitoriaAnimalImg img{
-    grid-column: 2 / 3; 
-    height: 100%; 
+.vitoriaAnimalImg img {
+    grid-column: 2 / 3;
+    height: 100%;
     border-radius: 8px;
 }
 
-.sidebar-blog{
+.sidebar-blog {
     min-height: 150px;
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
@@ -591,21 +622,21 @@ header {
 
 }
 
-.formnewsletter{
+.formnewsletter {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-top: 15px;
 }
 
-.formnewsletter input{
+.formnewsletter input {
     flex-grow: 0;
     padding: 8px 12px;
     border: 1px solid var(--cor-borda-suave);
     border-radius: 4px;
 }
 
-.formnewsletter button{
+.formnewsletter button {
     background-color: var(--cor-branco);
     color: var(--cor-preto);
     padding: 8px 15px;
@@ -616,7 +647,8 @@ header {
 
 
 /*Estilo da escrita e fundo - Voluntariado*/
-.titulo-inscricao, .formulario-inscricao{
+.titulo-inscricao,
+.formulario-inscricao {
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
     font-family: Arial, Helvetica, sans-serif;
@@ -624,19 +656,19 @@ header {
 }
 
 /*Estilo de todas as Divs do formulario - Voluntariado*/
-.formulario-inscricao div{
+.formulario-inscricao div {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
 }
 
 /*espaçamernto dos botoes de inscrição - voluntariado */
-.formulario-inscricao label{
+.formulario-inscricao label {
     margin-bottom: 5px;
 }
 
 /*Criando um espaçamento do formulario para o titulo da página*/
-.formulario-inscricao form.forminscricao{
+.formulario-inscricao form.forminscricao {
     padding: 5px;
 }
 
@@ -650,12 +682,12 @@ header {
     width: 400px;
     padding: 5px 10px;
     border: 1px solid var(--cor-borda-suave);
-    border-radius: 6px; 
+    border-radius: 6px;
     font-size: 1em;
     line-height: normal;
     color: var(--cor-preto);
     background-color: var(--cor-branco);
-    display: block; 
+    display: block;
     box-shadow: inset 0 1px 2px var(--cinza-rgb);
 }
 
@@ -669,7 +701,7 @@ header {
 }
 
 /*melhorando o fundo da area de inscrição - Voluntariado */
-.formulario-inscricao{
+.formulario-inscricao {
     background-image: url('../media/venhaFazerParte.jpg');
     background-size: cover;
     background-position: center;
@@ -680,7 +712,7 @@ header {
 
 
 /*Estilo do botão '' inviar inscrição '' - voluntariado */
-.formulario-inscricao button[type="submit"]{
+.formulario-inscricao button[type="submit"] {
     display: block;
     width: 20%;
     padding: 6px;
@@ -691,7 +723,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    }
+}
 
 /*Estilo do botão '' inviar inscrição '' - voluntariado */
 .formulario-inscricao button[type="submit"]:hover {
@@ -699,7 +731,7 @@ header {
 }
 
 /*estilo do Nav - Contato */
-.contatogeral{
+.contatogeral {
     padding: 10px;
     background-image: url('../media/equipeDoandoAlimentos.jpg');
     background-size: cover;
@@ -709,7 +741,7 @@ header {
 }
 
 /*estilização da caixa de informações de contato - Contato */
-.contato-informacoes{
+.contato-informacoes {
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
     font-family: Arial, sans-serif;
@@ -721,7 +753,7 @@ header {
 }
 
 /*Estilização da parte para entrarmos em contato - Contato */
-#form-contato{
+#form-contato {
     max-width: 600px;
     margin: 30px auto;
     background-color: var(--cor-fundo-clara);
@@ -735,13 +767,13 @@ header {
 /*Botoes para nos enviar uma solicitação */
 #form-contato input[type="text"],
 #form-contato input[type="email"],
-#form-contato input[type="file"], 
+#form-contato input[type="file"],
 #form-contato textarea {
     width: 100%;
     padding: 5px 15px;
     border: 1px solid var(--cor-borda-suave);
     border-radius: 6px;
-    color: var(-cor-preto);
+    color: var(--cor-preto);
     font-family: Arial, sans-serif;
     font-size: 1em;
     display: block;
@@ -751,23 +783,23 @@ header {
 
 /*botoes para envio do formulario - contato */
 #form-contato button[type="submit"] {
-   display: block;
-   width: 100%;
-   padding: 15px;
-   background-color: var(--cor-primaria);
-   color: var(--cor-branco);
-   border: none;
-   border-radius: 6px;
-   font-size: 1.2em;
-   font-weight: bold;
-   cursor: pointer;
-   transition: background-color 0.3s ease;
-   margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
 
 }
 
 /*Fundo da area de transparencia - Transparencia */
-.transparencia{
+.transparencia {
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
     font-family: Arial, sans-serif;
@@ -778,14 +810,19 @@ header {
 #distribuicao-recursos,
 #evolucao-voluntarios {
     margin: 20px auto;
-    border: 1px solid var(--cor-borda-clara) ;
+    border: 1px solid var(--cor-borda-clara);
     border-radius: 8px;
     display: block;
 
+    /* responsividade */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
+
 /*Area de LGPD - Transparencia */
-.lgpd{
+.lgpd {
     background-color: var(--cor-fundo-clara);
     color: var(--cor-preto);
     padding: 20px;
@@ -804,7 +841,7 @@ header {
 
 /* Estilo do Carrossel de Imagens */
 .carrossel-item {
-    display: flex; 
+    display: flex;
     align-items: center;
     overflow-x: scroll;
     flex-wrap: nowrap;
@@ -812,25 +849,27 @@ header {
 
 /* Estilo das Imagens do Carrossel */
 .carrossel-item img {
-    width: 300px;
-    min-width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
     margin-right: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
 }
 
 /*formulario de doação - Doações */
-#formulario-doacao{
+#formulario-doacao {
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
     width: 100%;
     padding: 40px 5%;
-    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /*formulario de doação - Doações */
-#formulario-doacao form{
+#formulario-doacao form {
     max-width: 900px;
-    margin: 20px;
+    margin: 20px auto;
     background-color: var(--cor-fundo-clara);
     color: var(--cor-preto);
     padding: 30px;
@@ -838,10 +877,12 @@ header {
     box-shadow: 0 4px 12px var(--cinza-rgb);
     border: 1px solid var(--cor-fundo-clara);
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-#formulario-doacao h2{
-   padding-left: 20px;
+#formulario-doacao h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 /*Estilo dos botoes e opcoes no formulario de doações - Doações*/
@@ -850,31 +891,37 @@ header {
 #formulario-doacao input[type="tel"],
 #formulario-doacao input[type="number"],
 #formulario-doacao select {
-    width: 50%;
-    padding: 5px 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
     border: 1px solid var(--cor-borda-suave);
     border-radius: 6px;
     color: var(--cor-preto);
     font-size: 1em;
-    display: block;
+    margin-bottom: 15px;
 }
 
 /* Estilo para os títulos de grupo de campos - Doações */
 #formulario-doacao fieldset legend {
-    font-size: 1.25em; 
+    font-size: 1.25em;
     font-weight: 700;
     color: var(--cor-preto);
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
     padding-bottom: 5px;
 }
 
-.form-group{
+#formulario-doacao fieldset {
+    border: none;
+    padding: 10px;
+}
+
+.form-group {
     margin-bottom: 15px;
 }
 
 /*estilo para os rótulos (label) - Doações */
 #formulario-doacao fieldset label {
-    display: block; 
+    display: block;
     margin-bottom: 8px;
     color: var(--cor-preto);
     font-weight: 600;
@@ -886,7 +933,7 @@ header {
 #formulario-doacao input[type="tel"],
 #formulario-doacao input[type="number"],
 #formulario-doacao select {
-    width: 50%; 
+    width: 100%;
     padding: 12px 15px;
     border: 1px solid var(--cor-borda-suave);
     border-radius: 6px;
@@ -896,29 +943,30 @@ header {
 
 /*caixinha de valor de doação - Doação*/
 #valor {
-    max-width: 150px; 
-    text-align: right; 
+    max-width: 150px;
+    text-align: right;
 }
 
 /* Corrigindo as Bolinhas de Rádio para ficarem lado a lado com o texto- Doação */
 .radio-options {
     display: flex;
-    gap: 5px; 
+    gap: 15px;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
 /* Garante que o rótulo do rádio button fique na mesma linha da bolinha- Doação */
 .radio-options label {
-    display: inline-block; 
-    margin-bottom: 0; 
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 /*botao final de doação*/
 .cta-doar-final {
     display: block;
-    width: 100%; 
+    width: 100%;
     padding: 15px;
-    font-size: 1.1em; 
+    font-size: 1.1em;
     font-weight: bold;
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
@@ -929,7 +977,7 @@ header {
     margin-top: 30px;
 }
 
-#chamada-transparencia{
+#chamada-transparencia {
     margin: 10px;
     background-color: var(--cor-fundo-clara);
     color: var(--cor-preto);
@@ -940,28 +988,28 @@ header {
 /*Estilo do footer*/
 footer {
     display: flex;
-    justify-content: column;
+    flex-direction: column;
     align-items: center;
     gap: 15px;
-    background-color: var(--cor-fundo-escura); 
-    color: var(--cor-branco);         
-    padding: 20px 5%; 
+    background-color: var(--cor-fundo-escura);
+    color: var(--cor-branco);
+    padding: 20px 5%;
     font-family: Arial, sans-serif;
-    font-size: 0.9em; 
+    font-size: 0.9em;
 }
 
-.links-uteis{
+.links-uteis {
     display: flex;
     gap: 10px;
     margin-bottom: 5px;
 }
 
-.redes-sociais{
+.redes-sociais {
     display: flex;
     gap: 15px;
 }
 
-footer a{
+footer a {
     color: var(--cor-branco);
 }
 
@@ -971,13 +1019,13 @@ footer a:hover {
 
 /* ESTILO DO BOTÃO DOAÇÕES DE DESTAQUE NO HEADER */
 .botao-doar {
-    display: inline-block; 
-    background-color: var(--cor-alerta); 
-    color: var(--cor-branco) !important; 
+    display: inline-block;
+    background-color: var(--cor-alerta);
+    color: var(--cor-branco) !important;
     text-decoration: none;
-    padding: 10px 18px; 
-    border-radius: 6px; 
-    font-weight: bold; 
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -986,13 +1034,13 @@ footer a:hover {
 }
 
 .botao-doar:focus {
-    outline: 2px solid var(--cor-branco); 
-    outline-offset: 2px;     
+    outline: 2px solid var(--cor-branco);
+    outline-offset: 2px;
     box-shadow: 0 0 5px var(--rgba-laranja-sombra);
 }
 
 .botao-doar:active {
-    transform: scale(0.98); 
+    transform: scale(0.98);
     background-color: var(--cor-alerta-active);
 }
 
@@ -1001,7 +1049,7 @@ footer a:hover {
 * RESPONSIVIDADE: MOBILE
 * ========================================================
 */
-@media (max-width: 425px) {
+@media (min-width: 300px) and (max-width: 425px) {
     .containerCampanhaAgasalho {
         flex-direction: column;
         text-align: center;
@@ -1059,70 +1107,555 @@ footer a:hover {
     }
 }
 
-@media (max-width: 768px) {
-    
+/* ╔═══════════════════════════════════════╗ */
+/* ║     RESPONSIVO — TELAS ATÉ 425PX      ║ */
+/* ╚═══════════════════════════════════════╝ */
+
+@media (max-width: 426px) {
     .main-nav ul {
-        flex-direction: column; 
+        flex-direction: column;
         width: 100%;
-        align-items: center; 
-        gap: 0; 
+        align-items: center;
+        gap: 0;
     }
+
     .main-nav ul li {
         width: 100%;
         margin-bottom: 8px;
         text-align: center;
     }
+
     .logo-container {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
-    .estatisticas,
-    .chamada-engajamento,
-    .nossaEquipe,
-    .transparenciaFinanciamento,
-    .artigo-conteudo, 
-    .conteudo-flex,
-    .artigo-conteudo-RS,
-    .artigo-conteudo-AM,
-    #podcast-depoimento, 
-    .blog-post { 
-        flex-direction: column; 
-        display: flex; 
-        grid-template-columns: 1fr; 
-        gap: 20px;
-        padding-left: 5%; 
+
+    /*=== RESPONSIVIDADE INDEX.HTML ===*/
+    #hero,
+    #credibilidade,
+    #ultimas-noticias {
+        padding-left: 5%;
         padding-right: 5%;
     }
-    .heroText, .heartMedia, .estatisticasText, .equipeDoandoAlimentos, .chamadaText, .chamadaImage, .nossaEquipeText, .nossaEquipeImg, .transparenciaFinanciamentoText, .transparenciaFinanciamentoImage, .artigo-texto, .artigo-imagem, .nordesteTexto, .postAgasalhoText, .video-container {
-        
-        flex-basis: auto !important; 
-        width: 100% !important; 
-        
-        text-align: left; /
-        padding-right: 0 !important; 
-        margin-bottom: 15px; 
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .heroText, .estatisticasText, .chamadaText, .nossaEquipeText, .transparenciaFinanciamentoText, .artigo-texto, .nordesteTexto, .postAgasalhoText {
-        order: 1; 
+    #credibilidade .estatisticas {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
     }
 
-    .heartMedia, .equipeDoandoAlimentos, .chamadaImage, .nossaEquipeImg, .transparenciaFinanciamentoImage, .artigo-imagem, .video-container {
-        order: 2; 
+    #credibilidade {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #credibilidade img,
+    #hero img {
         width: 100%;
-        height: 250px; 
-        overflow: hidden;
-        margin-bottom: 0; 
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
     }
-}
 
-/* Responsividade para o Blog */
+    .chamada-engajamento {
+        width: 100vw;
+        flex-direction: column;
+        display: flex;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
+    /*=== RESPONSIVIDADE INDEX.HTML ===*/
 
-/*corrigir espaçamento em branco no mobile da vitoria animal e formulario newsletter */
-@media (max-width: 768px) {
+    /*=== RESPONSIVIDADE SOBRE.HTML ===*/
+
+    #podcast-depoimento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    #podcast-depoimento .podcast-text,
+    #podcast-depoimento .podcast-player-container {
+        width: 100%;
+    }
+
+    .podcast-player-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .podcast-card {
+        flex-direction: column;
+        display: flex;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #podcast-depoimento img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    .transparenciaFinanciamento {
+        flex-direction: column;
+    }
+
+    .nossaEquipe {
+        flex-direction: column-reverse;
+    }
+
+    /*=== RESPONSIVIDADE SOBRE.HTML ===*/
+
+    /*=== RESPONSIVIDADE PROJETOS.HTML ===*/
+
+    .acaoPetropolis .artigo-conteudo,
+    .acaoNordeste .conteudo-flex,
+    .acaoSaoPaulo .conteudo-flex-SP,
+    .acaoRioGrandeSul .artigo-conteudo-RS,
+    .acaoAmazonia .artigo-conteudo-AM {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acaoNordeste h3 {
+        text-align: center;
+    }
+
+    .acaoRioGrandeSul h3 {
+        text-align: center;
+    }
+
+    /*=== RESPONSIVIDADE PROJETOS.HTML ===*/
+
+    /*=== RESPONSIVIDADE BLOG.HTML ===*/
+
     .sidebar-blog {
-        margin-top: -10px !important; 
+        margin-top: -15px;
+        position: relative;
+    }
+
+    .sidebar-blog form {
+        flex-direction: column;
+        width: 200px;
+    }
+
+    /*=== RESPONSIVIDADE BLOG.HTML ===*/
+
+    /*=== RESPONSIVIDADE VOLUNTARIADO.HTML ===*/
+    .formulario-inscricao form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .formulario-inscricao form>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario-inscricao input,
+    .formulario-inscricao select,
+    .formulario-inscricao button {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .formulario-inscricao button {
+        margin-top: 10px;
+    }
+
+    /*=== RESPONSIVIDADE VOLUNTARIADO.HTML ===*/
+
+    /*=== RESPONSIVIDADE TRANSPARENCIA.HTML ===*/
+    #distribuicao-recursos,
+    #evolucao-voluntarios {
+        max-width: 300px;
+    }
+
+    #formulario-doacao form {
+        padding: 20px;
+    }
+
+    /*=== RESPONSIVIDADE TRANSPARENCIA.HTML ===*/
+
+    /*=== RESPONSIVIDADE DOACOES.HTML ===*/
+    .carrossel-item img {
+        width: 150px;
+        height: 120px;
+        margin-right: 8px;
+    }
+
+    #formulario-doacao input[type="text"],
+    #formulario-doacao input[type="email"],
+    #formulario-doacao input[type="tel"],
+    #formulario-doacao input[type="number"],
+    #formulario-doacao select {
+        max-width: 100%;
+    }
+
+    .radio-options {
+        gap: 10px;
+    }
+
+    #chamada-transparencia {
+        width: 100%;
+        padding: 10px 5px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #chamada-transparencia h2,
+    #chamada-transparencia p {
+        text-align: center;
+    }
+
+    /*=== RESPONSIVIDADE DOACOES.HTML ===*/
+
+    img {
+        max-width: 100%;
+        max-width: 700px;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        /*garante que nenhuma parte da imagem será cortada */
+        border-radius: 12px;
+    }
+
+    div[class*="Image"],
+    div[class*="Img"],
+    div[class*="Media"],
+    .artigo-imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+        padding: 0;
+
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* ╔═════════════════════════════════════════════════╗ */
+/* ║    RESPONSIVO — TELAS MINIMO 768PX  MAX 1024PX  ║ */
+/* ╚═════════════════════════════════════════════════╝ */
+/* === RESPONSIVIDADE DESKTOP A PARTIR DE 768PX === */
+@media (min-width: 768px) {
+
+    .main-nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /*=== INDEX.HTML ===*/
+
+    #hero {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #credibilidade {
+        flex-direction: row;
+        gap: 50px;
+        text-align: left;
+        align-items: center;
+    }
+
+    #credibilidade .estatisticas {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .chamada-engajamento {
+        flex-direction: row;
+        gap: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /*=== SOBRE.HTML ===*/
+    #podcast-depoimento {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 8%;
+        text-align: left;
+    }
+
+    #podcast-depoimento .podcast-texto,
+    #podcast-depoimento .podcast-player-container {
+        width: 50%;
+        max-width: 600px;
+    }
+
+    .podcast-player-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .podcast-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #podcast-depoimento audio {
+        width: 100%;
+        height: 45px;
+    }
+
+    #podcast-depoimento img,
+    #podcast-depoimento video,
+    #podcast-depoimento audio {
+        object-fit: contain;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .transparenciaFinanciamento,
+    .nossaEquipe {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /*=== SOBRE.HTML ===*/
+
+    /*=== PROJETOS.HTML ===*/
+    .acaoPetropolis .artigo-conteudo,
+    .acaoSaoPaulo .conteudo-flex-SP,
+    .acaoAmazonia .artigo-conteudo-AM {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .acaoNordeste .conteudo-flex,
+    .acaoRioGrandeSul .artigo-conteudo-RS,
+
+
+    .acaoNordeste h3,
+    .acaoRioGrandeSul h3 {
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    /*=== PROJETOS.HTML ===*/
+
+    /*=== BLOG.HTML ===*/
+    .containerCampanhaAgasalho .postCampanhaAgasalho{
+        flex-direction: column;
+    }
+
+    .video-container{
+        width: 600px;
+    }
+
+    .postVitoriaAnimal{
+        flex-direction: column;
+    }
+
+    /*=== BLOG.HTML ===*/
+
+    /*=== VOLUNTARIADO.HTML ===*/
+    .formulario-inscricao form {
+        max-width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .formulario-inscricao form>div {
+        width: calc(50% - 10px);
+    }
+
+    .formulario-inscricao input,
+    .formulario-inscricao select,
+    .formulario-inscricao button {
+        width: 400px !important;
+    }
+
+    /*=== VOLUNTARIADO.HTML ===*/
+
+    /*=== TRANSPARENCIA.HTML ===*/
+    #distribuicao-recursos,
+    #evolucao-voluntarios {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /*=== TRANSPARENCIA.HTML ===*/
+
+    /*=== DOACOES.HTML ===*/
+    .carrossel-item img {
+        width: 250px;
+        height: 160px;
+        margin-right: 12px;
+    }
+
+    #formulario-doacao input[type="text"],
+    #formulario-doacao input[type="email"],
+    #formulario-doacao input[type="tel"],
+    #formulario-doacao input[type="number"],
+    #formulario-doacao select {
+        max-width: 50%;
+    }
+
+    .radio-options {
+        gap: 20px;
+    }
+
+    #chamada-transparencia {
+        width: 80%;
+        padding: 20px 10%;
+        margin: 20px auto;
+    }
+
+    #chamada-transparencia h2,
+    #chamada-transparencia p {
+        text-align: left;
+    }
+
+    img {
+        max-width: 100%;
+
+        height: auto;
+        display: block;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    div[class*="Image"],
+    div[class*="Img"],
+    div[class*="Media"],
+    .artigo-imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+        padding: 0;
+
+    }
+    /*=== DOACOES.HTML ===*/
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*=== IMAGENS GERAIS ===*/
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    div[class*="Image"],
+    div[class*="Img"],
+    div[class*="Media"],
+    .artigo-imagem {
+        width: auto;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    footer {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
     }
 }
+@media (min-width: 1024px) {
+      .logo-container {
+        display: flex;
+        align-items: center;      
+        justify-content: center;  
+        gap: 15px;                
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+     .logo-container img {
+        height: 80px;             
+        width: auto;
+        display: block;
+    }
+
+     .logo-container h1 {
+        font-size: 2.5rem;        
+        margin: 0; 
+    }
+    
+    #chamada-transparencia {
+        width: 100%;
+        padding: 40px  20px; 
+        margin: 0;         
+        box-sizing: border-box; 
+    }
+
+    #chamada-transparencia h2,
+    #chamada-transparencia p {
+        margin: 5px 0;     
+        padding: 0;        
+        text-align: center;
+    }
+}
+
 

@@ -12,7 +12,7 @@
         <!--Logo-->
         <div class="logo-container"> 
         <picture>
-        <source media="(max-width: 480px)" 
+        <source media="(max-width: 300px)" 
                 srcset="../media/logo-mobile-sm.png"> 
                 
         <source media="(max-width: 800px)" 
@@ -81,15 +81,19 @@
                 <div class="form-group">
                     <label>Tipo de Contribuição</label>
                     <div class="radio-options">
-                    <input type="radio" id="unica" name="recorrencia" value="unica" checked>
-                    <label for="unica">Doação Única</label>
-            
-                    <input type="radio" id="mensal" name="recorrencia" value="mensal">
-                    <label for="mensal">Mensal (Recorrente)</label>
-                </div>
+                    <label>
+                    <input type="radio" name="mensalidade" value="sim">
+                    Mensal (Recorrente)
+                    </label>
+                    
+                    <label>
+                    <input type="radio" name="mensalidade" value="nao">
+                    Única
+                    </label>
+                    </div>
                 </div>
                 <!--Dados do doador-->
-            </fieldset>
+             </fieldset>
               <fieldset>
                 <legend>Informações do Doador</legend>
                    <div class="form-group">
