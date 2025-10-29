@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reage Brasil | Apoio Humanitário e Resgate</title>
     <link rel="stylesheet" href="../css/style.css">  
-    <script src="../js/scripts.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/js/script.js" defer></script>
+    
 </head>
 <body>  
     <header>
@@ -40,7 +42,7 @@
         </nav>
     </header>
      </body>
-     <main>
+     <main id="main-content">
         <!--Transparencia da empresa-->
     <section class="transparencia">
         <h2>Transparência Inegociável</h2>
@@ -56,15 +58,18 @@
         </ul>
         <br>
        <section id="grafico-recursos">
-       <h2>Distribuição Detalhada dos Recursos</h2>
+       <h3>Distribuição Detalhada dos Recursos</h3>
+       <div class="canvas-container">
        <canvas id="distribuicao-recursos" width="400" height="400"></canvas>
+       </div>
        </section>
 
-       <section id="grafico-voluntarios">
-       <h2>Evolução da Nossa Rede de Voluntários</h2>
-       <canvas id="evolucao-voluntarios" width="400" height="400"></canvas>
-       </section>
-
+      <section id="grafico-voluntarios">
+      <h3>Evolução da Nossa Rede de Voluntários</h3>
+      <div class="canvas-container">
+      <canvas id="evolucao-voluntarios" width="400" height="400"></canvas>
+      </div>
+      </section>
 
         <!--LGPD / Segurança e conformidade de dados-->
         <section class="lgpd">

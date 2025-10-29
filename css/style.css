@@ -392,7 +392,6 @@ body, html {
     display: block;
 }
 
-
 /*Projetos e Ações - Tela Projetos*/
 .projetosTextInicial {
     padding: 30px 5%;
@@ -492,7 +491,6 @@ body, html {
     flex-basis: 55%;
 }
 
-
 /* Estilo da seção Ação Rio Grande do Sul - Tela Projetos*/
 .acaoRioGrandeSul {
     background-color: var(--cor-primaria);
@@ -561,7 +559,6 @@ body, html {
     color: var(--cor-branco);
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .postCampanhaAgasalho {
     display: flex;
@@ -645,7 +642,6 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
-
 /*Estilo da escrita e fundo - Voluntariado*/
 .titulo-inscricao,
 .formulario-inscricao {
@@ -673,12 +669,7 @@ body, html {
 }
 
 /*estilo das caixas de inscrição - voluntariado */
-.formulario-inscricao input[type="text"],
-.formulario-inscricao input[type="email"],
-.formulario-inscricao input[type="tel"],
-.formulario-inscricao input[type="number"],
-.formulario-inscricao select,
-.formulario-inscricao textarea {
+.formulario-inscricao input[type="text"], .formulario-inscricao input[type="email"], .formulario-inscricao input[type="tel"], .formulario-inscricao input[type="number"], .formulario-inscricao select, .formulario-inscricao textarea{
     width: 400px;
     padding: 5px 10px;
     border: 1px solid var(--cor-borda-suave);
@@ -708,8 +699,6 @@ body, html {
     background-blend-mode: overlay;
     background-color: var(--cor-primaria);
 }
-
-
 
 /*Estilo do botão '' inviar inscrição '' - voluntariado */
 .formulario-inscricao button[type="submit"] {
@@ -765,10 +754,7 @@ body, html {
 }
 
 /*Botoes para nos enviar uma solicitação */
-#form-contato input[type="text"],
-#form-contato input[type="email"],
-#form-contato input[type="file"],
-#form-contato textarea {
+#form-contato input[type="text"], #form-contato input[type="email"], #form-contato input[type="file"], #form-contato textarea {
     width: 100%;
     padding: 5px 15px;
     border: 1px solid var(--cor-borda-suave);
@@ -807,19 +793,15 @@ body, html {
 }
 
 /*Borda do canvas e formato -Transparencia*/
-#distribuicao-recursos,
-#evolucao-voluntarios {
+#distribuicao-recursos, #evolucao-voluntarios {
     margin: 20px auto;
     border: 1px solid var(--cor-borda-clara);
     border-radius: 8px;
     display: block;
-
-    /* responsividade */
     width: 100%;
     max-width: 400px;
     height: auto;
 }
-
 
 /*Area de LGPD - Transparencia */
 .lgpd {
@@ -837,7 +819,6 @@ body, html {
     border-bottom: 1px solid var(--cor-borda-clara);
     padding-bottom: 5px;
 }
-
 
 /* Estilo do Carrossel de Imagens */
 .carrossel-item {
@@ -886,11 +867,7 @@ body, html {
 }
 
 /*Estilo dos botoes e opcoes no formulario de doações - Doações*/
-#formulario-doacao input[type="text"],
-#formulario-doacao input[type="email"],
-#formulario-doacao input[type="tel"],
-#formulario-doacao input[type="number"],
-#formulario-doacao select {
+#formulario-doacao input[type="text"], #formulario-doacao input[type="email"], #formulario-doacao input[type="tel"], #formulario-doacao input[type="number"], #formulario-doacao select {
     width: 100%;
     max-width: 400px;
     padding: 12px 15px;
@@ -928,11 +905,7 @@ body, html {
 }
 
 /*Estilo do texto e caixinha de preenchimento - Doações */
-#formulario-doacao input[type="text"],
-#formulario-doacao input[type="email"],
-#formulario-doacao input[type="tel"],
-#formulario-doacao input[type="number"],
-#formulario-doacao select {
+#formulario-doacao input[type="text"], #formulario-doacao input[type="email"], #formulario-doacao input[type="tel"], #formulario-doacao input[type="number"], #formulario-doacao select {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid var(--cor-borda-suave);
@@ -1128,7 +1101,6 @@ footer a:hover {
     .logo-container {
         flex-direction: column;
     }
-
 
     /*=== RESPONSIVIDADE INDEX.HTML ===*/
     #hero,
@@ -1433,8 +1405,7 @@ footer a:hover {
         text-align: left;
     }
 
-    #podcast-depoimento .podcast-texto,
-    #podcast-depoimento .podcast-player-container {
+    #podcast-depoimento .podcast-texto,  #podcast-depoimento .podcast-player-container {
         width: 50%;
         max-width: 600px;
     }
@@ -1462,9 +1433,7 @@ footer a:hover {
         height: 45px;
     }
 
-    #podcast-depoimento img,
-    #podcast-depoimento video,
-    #podcast-depoimento audio {
+    #podcast-depoimento img, #podcast-depoimento video, #podcast-depoimento audio{
         object-fit: contain;
         max-width: 100%;
         border-radius: 10px;
@@ -1479,19 +1448,12 @@ footer a:hover {
     /*=== SOBRE.HTML ===*/
 
     /*=== PROJETOS.HTML ===*/
-    .acaoPetropolis .artigo-conteudo,
-    .acaoSaoPaulo .conteudo-flex-SP,
-    .acaoAmazonia .artigo-conteudo-AM {
+    .acaoPetropolis .artigo-conteudo,.acaoSaoPaulo .conteudo-flex-SP,.acaoAmazonia .artigo-conteudo-AM {
         flex-direction: row;
         gap: 30px;
     }
 
-    .acaoNordeste .conteudo-flex,
-    .acaoRioGrandeSul .artigo-conteudo-RS,
-
-
-    .acaoNordeste h3,
-    .acaoRioGrandeSul h3 {
+    .acaoNordeste .conteudo-flex, .acaoRioGrandeSul .artigo-conteudo-RS, .acaoNordeste h3, .acaoRioGrandeSul h3 {
         text-align: right;
         padding-right: 5px;
     }
@@ -1527,17 +1489,14 @@ footer a:hover {
         width: calc(50% - 10px);
     }
 
-    .formulario-inscricao input,
-    .formulario-inscricao select,
-    .formulario-inscricao button {
+    .formulario-inscricao input,.formulario-inscricao select,.formulario-inscricao button {
         width: 400px !important;
     }
 
     /*=== VOLUNTARIADO.HTML ===*/
 
     /*=== TRANSPARENCIA.HTML ===*/
-    #distribuicao-recursos,
-    #evolucao-voluntarios {
+    #distribuicao-recursos, #evolucao-voluntarios {
         max-width: 400px;
         margin: 0 auto;
     }
@@ -1551,11 +1510,7 @@ footer a:hover {
         margin-right: 12px;
     }
 
-    #formulario-doacao input[type="text"],
-    #formulario-doacao input[type="email"],
-    #formulario-doacao input[type="tel"],
-    #formulario-doacao input[type="number"],
-    #formulario-doacao select {
+    #formulario-doacao input[type="text"], #formulario-doacao input[type="email"], #formulario-doacao input[type="tel"], #formulario-doacao input[type="number"], #formulario-doacao select {
         max-width: 50%;
     }
 
@@ -1569,8 +1524,7 @@ footer a:hover {
         margin: 20px auto;
     }
 
-    #chamada-transparencia h2,
-    #chamada-transparencia p {
+    #chamada-transparencia h2, #chamada-transparencia p {
         text-align: left;
     }
 
@@ -1583,9 +1537,7 @@ footer a:hover {
         border-radius: 12px;
     }
 
-    div[class*="Image"],
-    div[class*="Img"],
-    div[class*="Media"],
+    div[class*="Image"], div[class*="Img"], div[class*="Media"],
     .artigo-imagem {
         width: 100%;
         display: flex;
@@ -1607,9 +1559,7 @@ footer a:hover {
         height: auto;
     }
 
-    div[class*="Image"],
-    div[class*="Img"],
-    div[class*="Media"],
+    div[class*="Image"], div[class*="Img"], div[class*="Media"],
     .artigo-imagem {
         width: auto;
         padding: 0;
@@ -1622,6 +1572,11 @@ footer a:hover {
         justify-content: space-between;
     }
 }
+
+/* ╔═════════════════════════════════════════════════╗ */
+/* ║    RESPONSIVO — DESKTOP MINIMO 1025PX           ║ */
+/* ╚═════════════════════════════════════════════════╝ */
+
 @media (min-width: 1024px) {
       .logo-container {
         display: flex;
@@ -1650,8 +1605,7 @@ footer a:hover {
         box-sizing: border-box; 
     }
 
-    #chamada-transparencia h2,
-    #chamada-transparencia p {
+    #chamada-transparencia h2, #chamada-transparencia p {
         margin: 5px 0;     
         padding: 0;        
         text-align: center;
