@@ -24,7 +24,12 @@
         </picture>
     <!--Título inicial-->
     <h1>REAGE BRASIL</h1>
-</div>
+    <div class="user-controls">
+    <button id="btn-login" onclick="ModSPA.carregar('login.html')">Login</button>
+    
+    <button id="btn-logout" style="display: none;" onclick="ModAuth.deslogar()">Logout</button>
+    </div>
+    </div>
         <!--Navegação do home e opções-->
         <nav class="main-nav">
             <ul>
@@ -36,6 +41,8 @@
                 <li><a href="contato.html">Contato e Dúvidas</a></li>
                 <li><a href="transparencia.html">Transparencia</a></li>
                 <li><a href="doacoes.html" class="botao-doar">Doações</a></li> 
+                <button id="dark-mode-toggle" aria-label="Alternar para Modo Escuro"></button>
+                <button id="toggle-alto-contraste" aria-label="Alternar modo de alto contraste">A+</button>
             </ul>
         </nav>
     </header>
@@ -57,7 +64,7 @@
         
         <div class="estatisticas">
             <div class="equipeDoandoAlimentos">
-                <img src="../media/equipeDoandoAlimentos.jpg" alt="Imagem de doação de alimentos">
+                <img src="../media/equipeDoandoAlimentos.png" alt="Imagem de doação de alimentos">
             </div>
             <div class="estatisticasText">
             <h3>Há mais de 2 Anos salvando vidas</h3>
@@ -74,7 +81,7 @@
             <a class="voluntariadoInicial" href="voluntariado.html">Inscreva-se agora</a>
             </div>
             <div class="chamadaImage">
-            <img src="../media/venhaFazerParte.jpg" alt="Imagem de voluntários ajudando">
+            <img src="../media/venhaFazerParte.png" alt="Imagem de voluntários ajudando">
             </div>
         </aside>
         

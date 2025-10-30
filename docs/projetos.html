@@ -25,6 +25,11 @@
         
     <!--Título inicial-->
     <h1>REAGE BRASIL</h1>
+   <div class="user-controls">
+    <button id="btn-login" onclick="ModSPA.carregar('login.html')">Login</button>
+    
+    <button id="btn-logout" style="display: none;" onclick="ModAuth.deslogar()">Logout</button>
+</div>
 </div>
         <!--Navegação do home e opções-->
         <nav class="main-nav">
@@ -37,6 +42,7 @@
                 <li><a href="contato.html">Contato e Dúvidas</a></li>
                 <li><a href="transparencia.html">Transparencia</a></li>
                 <li><a href="doacoes.html" class="botao-doar">Doações</a></li> 
+                <button id="dark-mode-toggle" aria-label="Alternar para Modo Escuro"></button>
             </ul>
         </nav>
     </header>
@@ -61,7 +67,7 @@
             </div>
         
               <div class="artigo-imagem">
-              <img class="petropolisImg" src="../media/resgate-petropolis.jpg" alt="Imagem de resgate em Petrópolis">
+              <img class="petropolisImg" src="../media/resgate-petropolis.webp" alt="Imagem de resgate em Petrópolis">
               </div>
                 </div>
            </article>
@@ -133,7 +139,7 @@
             </div>
         
             <div class="artigo-imagem">
-            <img src="../media/secaAmazonia.jpg" alt="Voluntários da Reage Brasil desembarcando na Amazônia">
+            <img src="../media/secaAmazonia.webp" alt="Voluntários da Reage Brasil desembarcando na Amazônia">
             </div>
             </div>
            </article>

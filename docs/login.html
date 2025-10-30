@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Reage Brasil</title>
+</head>
+
+<body>
+    <main>
+    <div class="login-container">
+        <h2>Acesso de Voluntário</h2>
+        <form id="login-form"> 
+            <div class="form-group">
+                <label for="email-login">E-mail:</label>
+                <input type="email" id="email-login" name="email" required placeholder="admin@reage.com">
+                <span class="erro-mensagem" id="erro-email-login"></span> 
+            </div>
+            <div class="form-group">
+                <label for="senha-login">Senha:</label>
+                <input type="password" id="senha-login" name="senha" required placeholder="Qualquer senha">
+                <span class="erro-mensagem" id="erro-senha-login"></span>
+            </div>
+            <button type="submit" id="btn-entrar" class="btn-principal">Entrar</button>
+            <p id="msg-autenticacao" class="aviso">🔑 Teste: E-mail: admin@reage.com e qualquer Senha.</p>
+        </form>
+    </div>
+</main>
+
+    </body>
+</html>

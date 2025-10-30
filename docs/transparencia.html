@@ -26,6 +26,11 @@
         </picture>
     <!--Título inicial-->
     <h1>REAGE BRASIL</h1>
+    <div class="user-controls">
+    <button id="btn-login" onclick="ModSPA.carregar('login.html')">Login</button>
+    
+    <button id="btn-logout" style="display: none;" onclick="ModAuth.deslogar()">Logout</button>
+</div>
 </div>
         <!--Navegação do home e opções-->
         <nav class="main-nav">
@@ -38,6 +43,7 @@
                 <li><a href="contato.html">Contato e Dúvidas</a></li>
                 <li><a href="transparencia.html">Transparencia</a></li>
                 <li><a href="doacoes.html" class="botao-doar">Doações</a></li> 
+                <button id="dark-mode-toggle" aria-label="Alternar para Modo Escuro"></button>
             </ul>
         </nav>
     </header>
@@ -72,8 +78,8 @@
       </section>
 
         <!--LGPD / Segurança e conformidade de dados-->
-        <section class="lgpd">
-        <h3>Segurança e Conformidade (LGPD)</h3>
+        
+        <h3>Segurança e Conformidade (LGPD)</h3><section class="lgpd">
         <p>Sua confiança é o nosso maior ativo. Levamos a proteção de dados a sério, garantindo que suas informações estejam sempre seguras:</p>
 
         <dl>
